@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\sv_SE;
+namespace Cheremhovo1990\Faker\Provider\sv_SE;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     /**
      * @var array Swedish phone number formats

@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\ORM\Propel;
+namespace Cheremhovo1990\Faker\ORM\Propel;
 
 use \PropelColumnTypes;
 use \ColumnMap;
@@ -10,9 +10,9 @@ class ColumnTypeGuesser
     protected $generator;
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Cheremhovo1990\Faker\Generator $generator
      */
-    public function __construct(\Faker\Generator $generator)
+    public function __construct(\Cheremhovo1990\Faker\Generator $generator)
     {
         $this->generator = $generator;
     }

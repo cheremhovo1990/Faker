@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\vi_VN;
+namespace Cheremhovo1990\Faker\Provider\vi_VN;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     protected static $areaCodes = array(
         76, 281, 64, 781, 240, 241,

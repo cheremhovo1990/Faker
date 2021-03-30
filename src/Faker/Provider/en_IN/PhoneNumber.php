@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_IN;
+namespace Cheremhovo1990\Faker\Provider\en_IN;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     protected static $formats = array(
         '+91 ## ########',

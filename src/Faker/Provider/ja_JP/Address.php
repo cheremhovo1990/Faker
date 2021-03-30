@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ja_JP;
+namespace Cheremhovo1990\Faker\Provider\ja_JP;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $country = array(
         'アフガニスタン', 'アルバニア', 'アルジェリア', 'アメリカ領サモア', 'アンドラ', 'アンゴラ', 'アンギラ', '南極大陸', 'アンティグアバーブーダ', 'アルゼンチン', 'アルメニア', 'アルバ', 'オーストラリア', 'オーストリア', 'アゼルバイジャン',

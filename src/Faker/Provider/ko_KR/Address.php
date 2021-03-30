@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ko_KR;
+namespace Cheremhovo1990\Faker\Provider\ko_KR;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $postcode = array('#####');
     protected static $buildingNumber = array('####', '###');

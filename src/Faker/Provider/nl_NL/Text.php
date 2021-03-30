@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\nl_NL;
+namespace Cheremhovo1990\Faker\Provider\nl_NL;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * Project Gutenberg's Dichtertje - De Uitvreter - Titaantjes, by Nescio

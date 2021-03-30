@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker;
+namespace Cheremhovo1990\Faker;
 
 /**
  * @property string $name
@@ -294,6 +294,6 @@ class Generator
 
     public function __wakeup()
     {
-        $this->formatters = [];
+        $this->formatters = array();
     }
 }

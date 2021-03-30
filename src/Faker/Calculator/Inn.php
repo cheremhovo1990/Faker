@@ -1,5 +1,5 @@
 <?php
-namespace Faker\Calculator;
+namespace Cheremhovo1990\Faker\Calculator;
 
 class Inn
 {

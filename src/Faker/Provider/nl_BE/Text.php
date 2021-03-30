@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\nl_BE;
+namespace Cheremhovo1990\Faker\Provider\nl_BE;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * The Project Gutenberg EBook of De legende en de heldhaftige, vroolijke en

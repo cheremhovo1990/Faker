@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test;
+namespace Cheremhovo1990\Faker\Test;
 
-use Faker\Generator;
+use Cheremhovo1990\Faker\Generator;
 use PHPUnit\Framework\TestCase;
 
 final class GeneratorTest extends TestCase

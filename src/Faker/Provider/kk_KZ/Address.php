@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\kk_KZ;
+namespace Cheremhovo1990\Faker\Provider\kk_KZ;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $citySuffix = array('қаласы');
 

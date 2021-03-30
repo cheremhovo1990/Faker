@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\Test\Provider\fr_FR;
+namespace Cheremhovo1990\Faker\Test\Provider\fr_FR;
 
-use Faker\Generator;
-use Faker\Provider\fr_FR\Person;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\fr_FR\Person;
 use PHPUnit\Framework\TestCase;
 
 final class PersonTest extends TestCase
@@ -19,7 +19,7 @@ final class PersonTest extends TestCase
 
     public function testNIRReturnsTheRightGender()
     {
-		$nir = $this->faker->nir(\Faker\Provider\Person::GENDER_MALE);
+		$nir = $this->faker->nir(\Cheremhovo1990\Faker\Provider\Person::GENDER_MALE);
 		$this->assertStringStartsWith('1', $nir);
     }
 

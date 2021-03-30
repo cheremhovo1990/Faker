@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Calculator;
+namespace Cheremhovo1990\Faker\Calculator;
 
 /**
  * Utility class for validating EAN-8 and EAN-13 numbers
  *
- * @package Faker\Calculator
+ * @package Cheremhovo1990\Faker\Calculator
  */
 class Ean
 {

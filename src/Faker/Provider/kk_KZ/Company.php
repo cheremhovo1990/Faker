@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\kk_KZ;
+namespace Cheremhovo1990\Faker\Provider\kk_KZ;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $companyNameFormats = array(
         '{{companyPrefix}} {{companyNameElement}}',
@@ -59,7 +59,7 @@ class Company extends \Faker\Provider\Company
     public static function businessIdentificationNumber(\DateTime $registrationDate = null)
     {
         if (!$registrationDate) {
-            $registrationDate = \Faker\Provider\DateTime::dateTimeThisYear();
+            $registrationDate = \Cheremhovo1990\Faker\Provider\DateTime::dateTimeThisYear();
         }
 
         $dateAsString              = $registrationDate->format('ym');

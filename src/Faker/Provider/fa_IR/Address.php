@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fa_IR;
+namespace Cheremhovo1990\Faker\Provider\fa_IR;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $cityPrefix = array('استان');
     protected static $streetPrefix = array('خیابان');

@@ -1,16 +1,18 @@
 <?php
 
-namespace Faker\Provider\zh_TW;
+namespace Cheremhovo1990\Faker\Provider\zh_TW;
 
-class Internet extends \Faker\Provider\Internet
+use Cheremhovo1990\Faker\Factory;
+
+class Internet extends \Cheremhovo1990\Faker\Provider\Internet
 {
     public function userName()
     {
-        return \Faker\Factory::create('en_US')->userName();
+        return Factory::create('en_US')->userName();
     }
 
     public function domainWord()
     {
-        return \Faker\Factory::create('en_US')->domainWord();
+        return Factory::create('en_US')->domainWord();
     }
 }

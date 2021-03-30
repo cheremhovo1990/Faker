@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\de_DE;
+namespace Cheremhovo1990\Faker\Provider\de_DE;
 
-class Internet extends \Faker\Provider\Internet
+class Internet extends \Cheremhovo1990\Faker\Provider\Internet
 {
     /**
      * @link https://www.statista.com/statistics/446418/most-popular-e-mail-providers-germany/

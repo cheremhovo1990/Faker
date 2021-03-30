@@ -1,8 +1,8 @@
 <?php
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Provider\Biased;
-use Faker\Generator;
+use Cheremhovo1990\Faker\Provider\Biased;
+use Cheremhovo1990\Faker\Generator;
 use PHPUnit\Framework\TestCase;
 
 final class BiasedTest extends TestCase
@@ -29,7 +29,7 @@ final class BiasedTest extends TestCase
 
     public function testUnbiased()
     {
-        $this->performFake(array('\Faker\Provider\Biased', 'unbiased'));
+        $this->performFake(array('\Cheremhovo1990\Faker\Provider\Biased', 'unbiased'));
 
         // assert that all numbers are near the expected unbiased value
         foreach ($this->results as $number => $amount) {
@@ -44,7 +44,7 @@ final class BiasedTest extends TestCase
 
     public function testLinearHigh()
     {
-        $this->performFake(array('\Faker\Provider\Biased', 'linearHigh'));
+        $this->performFake(array('\Cheremhovo1990\Faker\Provider\Biased', 'linearHigh'));
 
         foreach ($this->results as $number => $amount) {
             // integral
@@ -58,7 +58,7 @@ final class BiasedTest extends TestCase
 
     public function testLinearLow()
     {
-        $this->performFake(array('\Faker\Provider\Biased', 'linearLow'));
+        $this->performFake(array('\Cheremhovo1990\Faker\Provider\Biased', 'linearLow'));
 
         foreach ($this->results as $number => $amount) {
             // integral

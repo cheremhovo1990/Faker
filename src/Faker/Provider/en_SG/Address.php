@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_SG;
+namespace Cheremhovo1990\Faker\Provider\en_SG;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
 
     // http://en.wikipedia.org/wiki/Singapore_Post#Address_format

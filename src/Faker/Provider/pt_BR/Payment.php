@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\pt_BR;
+namespace Cheremhovo1990\Faker\Provider\pt_BR;
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
     protected static $cardVendors = array(
         'Visa', 'Visa', 'Visa', 'Visa', 'Visa',

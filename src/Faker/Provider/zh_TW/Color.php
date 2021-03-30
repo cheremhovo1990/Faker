@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\zh_TW;
+namespace Cheremhovo1990\Faker\Provider\zh_TW;
 
-class Color extends \Faker\Provider\Color
+class Color extends \Cheremhovo1990\Faker\Provider\Color
 {
     /**
      * @link http://zh.wikipedia.org/zh-tw/%E9%A2%9C%E8%89%B2%E5%88%97%E8%A1%A8

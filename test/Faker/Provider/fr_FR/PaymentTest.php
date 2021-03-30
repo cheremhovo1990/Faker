@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Test\Provider\fr_FR;
+namespace Cheremhovo1990\Faker\Test\Provider\fr_FR;
 
-use Faker\Calculator\Luhn;
-use Faker\Generator;
-use Faker\Provider\fr_FR\Payment;
+use Cheremhovo1990\Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\fr_FR\Payment;
 use PHPUnit\Framework\TestCase;
 
 final class PaymentTest extends TestCase

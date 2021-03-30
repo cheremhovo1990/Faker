@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_HK;
+namespace Cheremhovo1990\Faker\Provider\en_HK;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $country = array('Hong Kong');
 

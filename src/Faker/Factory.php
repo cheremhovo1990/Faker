@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker;
+namespace Cheremhovo1990\Faker;
 
 class Factory
 {
@@ -53,7 +53,7 @@ class Factory
      */
     protected static function findProviderClassname($provider, $locale = '')
     {
-        $providerClass = 'Faker\\' . ($locale ? sprintf('Provider\%s\%s', $locale, $provider) : sprintf('Provider\%s', $provider));
+        $providerClass = 'Cheremhovo1990\\Faker\\' . ($locale ? sprintf('Provider\%s\%s', $locale, $provider) : sprintf('Provider\%s', $provider));
         if (class_exists($providerClass, true)) {
             return $providerClass;
         }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\id_ID;
+namespace Cheremhovo1990\Faker\Provider\id_ID;
 
-class Internet extends \Faker\Provider\Internet
+class Internet extends \Cheremhovo1990\Faker\Provider\Internet
 {
     /**
      * @var array some email domains

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ru_RU;
+namespace Cheremhovo1990\Faker\Provider\ru_RU;
 
-class Color extends \Faker\Provider\Color
+class Color extends \Cheremhovo1990\Faker\Provider\Color
 {
     protected static $safeColorNames = array(
         'черный', 'темно-бордовый', 'зеленый', 'темно-синий', 'оливковый',

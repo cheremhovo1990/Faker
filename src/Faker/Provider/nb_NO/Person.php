@@ -1,8 +1,10 @@
 <?php
 
-namespace Faker\Provider\nb_NO;
+namespace Cheremhovo1990\Faker\Provider\nb_NO;
 
-class Person extends \Faker\Provider\Person
+use Cheremhovo1990\Faker\Provider\DateTime;
+
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $formats = array(
         '{{firstName}} {{lastName}}',
@@ -290,7 +292,7 @@ class Person extends \Faker\Provider\Person
     public function personalIdentityNumber(\DateTime $birthdate = null, $gender = null)
     {
         if (!$birthdate) {
-            $birthdate = \Faker\Provider\DateTime::dateTimeThisCentury();
+            $birthdate = DateTime::dateTimeThisCentury();
         }
         $datePart = $birthdate->format('dmy');
 

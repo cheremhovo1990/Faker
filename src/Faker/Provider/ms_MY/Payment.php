@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ms_MY;
+namespace Cheremhovo1990\Faker\Provider\ms_MY;
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
     protected static $bankFormats = array(
         '{{localBank}}',

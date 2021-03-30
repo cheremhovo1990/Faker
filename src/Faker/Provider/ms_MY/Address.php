@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Provider\ms_MY;
+namespace Cheremhovo1990\Faker\Provider\ms_MY;
 
-use \Faker\Generator;
+use \Cheremhovo1990\Faker\Generator;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     /**
      * @link https://en.wikipedia.org/wiki/Addresses_in_Malaysia

@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Test\Provider\id_ID;
+namespace Cheremhovo1990\Faker\Test\Provider\id_ID;
 
-use Faker\Generator;
-use Faker\Provider\DateTime;
-use Faker\Provider\id_ID\Person;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\DateTime;
+use Cheremhovo1990\Faker\Provider\id_ID\Person;
 use PHPUnit\Framework\TestCase;
 
 final class PersonTest extends TestCase

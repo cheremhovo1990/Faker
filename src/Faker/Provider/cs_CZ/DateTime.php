@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Provider\cs_CZ;
+namespace Cheremhovo1990\Faker\Provider\cs_CZ;
 
 /**
  * Czech months and days without setting locale
  */
-class DateTime extends \Faker\Provider\DateTime
+class DateTime extends \Cheremhovo1990\Faker\Provider\DateTime
 {
     protected static $days = array(
         'neděle', 'pondělí', 'úterý', 'středa', 'čtvrtek', 'pátek', 'sobota'

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\sl_SI;
+namespace Cheremhovo1990\Faker\Provider\sl_SI;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
 
     protected static $maleNameFormats = array(

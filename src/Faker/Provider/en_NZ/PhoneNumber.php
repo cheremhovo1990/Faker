@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_NZ;
+namespace Cheremhovo1990\Faker\Provider\en_NZ;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     /**
      * An array of en_NZ landline phone number formats

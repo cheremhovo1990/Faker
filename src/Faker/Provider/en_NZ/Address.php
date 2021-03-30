@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_NZ;
+namespace Cheremhovo1990\Faker\Provider\en_NZ;
 
-class Address extends \Faker\Provider\en_US\Address
+class Address extends \Cheremhovo1990\Faker\Provider\en_US\Address
 {
 
     /**

@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\ORM\Mandango;
+namespace Cheremhovo1990\Faker\ORM\Mandango;
 
 use Mandango\Mandango;
-use Faker\Provider\Base;
+use Cheremhovo1990\Faker\Provider\Base;
 
 /**
  * Service class for populating a table through a Mandango ActiveRecord class.
@@ -50,15 +50,15 @@ class EntityPopulator
     }
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Cheremhovo1990\Faker\Generator $generator
      * @param Mandango $mandango
      * @return array
      */
-    public function guessColumnFormatters(\Faker\Generator $generator, Mandango $mandango)
+    public function guessColumnFormatters(\Cheremhovo1990\Faker\Generator $generator, Mandango $mandango)
     {
         $formatters = array();
-        $nameGuesser = new \Faker\Guesser\Name($generator);
-        $columnTypeGuesser = new \Faker\ORM\Mandango\ColumnTypeGuesser($generator);
+        $nameGuesser = new \Cheremhovo1990\Faker\Guesser\Name($generator);
+        $columnTypeGuesser = new \Cheremhovo1990\Faker\ORM\Mandango\ColumnTypeGuesser($generator);
 
         $metadata = $mandango->getMetadata($this->class);
 

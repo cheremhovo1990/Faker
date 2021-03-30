@@ -1,8 +1,10 @@
 <?php
 
-namespace Faker\Provider\lt_LT;
+namespace Cheremhovo1990\Faker\Provider\lt_LT;
 
-class Person extends \Faker\Provider\Person
+use Cheremhovo1990\Faker\Provider\DateTime;
+
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
 
     protected static $maleNameFormats = array(
@@ -320,7 +322,7 @@ class Person extends \Faker\Provider\Person
     public function personalIdentityNumber($gender = 'male', \DateTime $birthdate = null, $randomNumber = '')
     {
         if (!$birthdate) {
-            $birthdate = \Faker\Provider\DateTime::dateTimeThisCentury();
+            $birthdate = DateTime::dateTimeThisCentury();
         }
 
         $genderNumber = ($gender == 'male') ? 1 : 0;

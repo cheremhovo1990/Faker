@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ja_JP;
+namespace Cheremhovo1990\Faker\Provider\ja_JP;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     protected static $separator = '';
     protected static $separatorLen = 0;

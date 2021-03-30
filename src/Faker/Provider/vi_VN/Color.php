@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\vi_VN;
+namespace Cheremhovo1990\Faker\Provider\vi_VN;
 
-class Color extends \Faker\Provider\Color
+class Color extends \Cheremhovo1990\Faker\Provider\Color
 {
     protected static $safeColorNames = array(
         'đen', 'xanh', 'ô liu',

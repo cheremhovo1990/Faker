@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\tr_TR;
+namespace Cheremhovo1990\Faker\Provider\tr_TR;
 
-class DateTime extends \Faker\Provider\DateTime
+class DateTime extends \Cheremhovo1990\Faker\Provider\DateTime
 {
     public static function amPm($max = 'now')
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\bn_BD;
+namespace Cheremhovo1990\Faker\Provider\bn_BD;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $formats = array(
         '{{companyName}} {{companyType}}'

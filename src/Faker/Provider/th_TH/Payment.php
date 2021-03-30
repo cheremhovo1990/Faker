@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\th_TH;
+namespace Cheremhovo1990\Faker\Provider\th_TH;
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
     /**
      * @var array Thai bank names

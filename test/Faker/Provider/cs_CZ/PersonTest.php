@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Test\Provider\cs_CZ;
+namespace Cheremhovo1990\Faker\Test\Provider\cs_CZ;
 
-use Faker\Generator;
-use Faker\Provider\cs_CZ\Person;
-use Faker\Provider\Miscellaneous;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\cs_CZ\Person;
+use Cheremhovo1990\Faker\Provider\Miscellaneous;
 use PHPUnit\Framework\TestCase;
 
 final class PersonTest extends TestCase

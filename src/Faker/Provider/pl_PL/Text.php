@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\pl_PL;
+namespace Cheremhovo1990\Faker\Provider\pl_PL;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * The Project Gutenberg EBook of Sklepy cynamonowe, by Bruno Schulz

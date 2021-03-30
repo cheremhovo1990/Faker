@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Provider\pt_BR;
+namespace Cheremhovo1990\Faker\Provider\pt_BR;
 
 require_once "check_digit.php";
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $formats = array(
         '{{lastName}} {{companySuffix}}',

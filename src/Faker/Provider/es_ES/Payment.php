@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\es_ES;
+namespace Cheremhovo1990\Faker\Provider\es_ES;
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
     private static $vatMap = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'N', 'P', 'Q', 'R', 'S', 'U', 'V', 'W');
 

@@ -1,17 +1,17 @@
 <?php
 
-namespace Faker\Test\Provider\fr_CH;
+namespace Cheremhovo1990\Faker\Test\Provider\fr_CH;
 
-use Faker\Generator;
-use Faker\Provider\fr_CH\Address;
-use Faker\Provider\fr_CH\Person;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\fr_CH\Address;
+use Cheremhovo1990\Faker\Provider\fr_CH\Person;
 use PHPUnit\Framework\TestCase;
 
 final class AddressTest extends TestCase
 {
 
     /**
-     * @var Faker\Generator
+     * @var Cheremhovo1990\Faker\Generator
      */
     private $faker;
 

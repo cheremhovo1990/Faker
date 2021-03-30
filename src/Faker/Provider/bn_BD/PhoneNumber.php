@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\bn_BD;
+namespace Cheremhovo1990\Faker\Provider\bn_BD;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     public function phoneNumber()
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\th_TH;
+namespace Cheremhovo1990\Faker\Provider\th_TH;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $slogans = array(
         array(

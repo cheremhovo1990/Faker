@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Provider\Lorem;
+use Cheremhovo1990\Faker\Provider\Lorem;
 use PHPUnit\Framework\TestCase;
 
 final class LoremTest extends TestCase

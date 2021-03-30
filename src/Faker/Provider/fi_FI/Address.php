@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fi_FI;
+namespace Cheremhovo1990\Faker\Provider\fi_FI;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $cityPrefix = array('Pohjois', 'Etelä', 'Itä', 'Länsi', 'Uusi', 'Uus');
     protected static $citySuffix = array('kylä', 'niemi', 'järvi', 'joki', 'lampi', 'mäki', 'vesi', 'niemi', 'harju', 'lahti', 'harju', 'salmi', 'koski', 'pudas', 'saari');

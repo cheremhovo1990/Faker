@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\sr_RS;
+namespace Cheremhovo1990\Faker\Provider\sr_RS;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      *

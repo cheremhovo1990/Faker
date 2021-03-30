@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fa_IR;
+namespace Cheremhovo1990\Faker\Provider\fa_IR;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * generates text string in arabic

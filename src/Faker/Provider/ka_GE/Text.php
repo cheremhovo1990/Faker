@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ka_GE;
+namespace Cheremhovo1990\Faker\Provider\ka_GE;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     
     protected static $textStartsWithUppercase = false;

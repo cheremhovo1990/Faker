@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ko_KR;
+namespace Cheremhovo1990\Faker\Provider\ko_KR;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * This provider uses wikipedia's top Korean last names. These cover more than 90% of Korean population.

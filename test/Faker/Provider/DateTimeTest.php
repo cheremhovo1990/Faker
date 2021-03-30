@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Provider\DateTime as DateTimeProvider;
+use Cheremhovo1990\Faker\Provider\DateTime as DateTimeProvider;
 use PHPUnit\Framework\TestCase;
 
 final class DateTimeTest extends TestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\el_GR;
+namespace Cheremhovo1990\Faker\Provider\el_GR;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     /**
      * @link https://en.wikipedia.org/wiki/Telephone_numbers_in_Greece

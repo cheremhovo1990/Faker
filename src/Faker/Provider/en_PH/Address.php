@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_PH;
+namespace Cheremhovo1990\Faker\Provider\en_PH;
 
-class Address extends \Faker\Provider\en_US\Address
+class Address extends \Cheremhovo1990\Faker\Provider\en_US\Address
 {
     protected static $streetNameFormats = array(
         '{{lastName}} {{streetSuffix}}'

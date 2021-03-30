@@ -1,11 +1,13 @@
 <?php
 
-namespace Faker\Provider\zh_TW;
+namespace Cheremhovo1990\Faker\Provider\zh_TW;
 
-class Payment extends \Faker\Provider\Payment
+use Cheremhovo1990\Faker\Factory;
+
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
     public function creditCardDetails($valid = true)
     {
-        return \Faker\Factory::create('en_US')->creditCardDetails($valid);
+        return Factory::create('en_US')->creditCardDetails($valid);
     }
 }

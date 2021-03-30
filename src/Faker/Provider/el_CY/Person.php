@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\el_CY;
+namespace Cheremhovo1990\Faker\Provider\el_CY;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * @var array

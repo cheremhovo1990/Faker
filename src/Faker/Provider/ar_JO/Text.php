@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ar_JO;
+namespace Cheremhovo1990\Faker\Provider\ar_JO;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     protected static function validStart($word)
     {

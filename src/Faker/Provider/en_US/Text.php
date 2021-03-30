@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_US;
+namespace Cheremhovo1990\Faker\Provider\en_US;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * Project Gutenberg's Alice's Adventures in Wonderland, by Lewis Carroll

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\sr_Cyrl_RS;
+namespace Cheremhovo1990\Faker\Provider\sr_Cyrl_RS;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * @link http://sr.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%B0%D0%BA_%D1%81%D1%80%D0%BF%D1%81%D0%BA%D0%B8%D1%85_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B0

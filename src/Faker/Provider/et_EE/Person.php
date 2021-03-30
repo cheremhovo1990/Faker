@@ -1,13 +1,13 @@
 <?php
 
-namespace Faker\Provider\et_EE;
+namespace Cheremhovo1990\Faker\Provider\et_EE;
 
 /**
  * Class Person
- * @package Faker\Provider\et_EE
+ * @package Cheremhovo1990\Faker\Provider\et_EE
  * @author David Gegelija <code@imdavid.xyz>
  */
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * @link https://news.err.ee/114745/most-popular-baby-names-of-2014

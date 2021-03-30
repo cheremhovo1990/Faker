@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Calculator;
+namespace Cheremhovo1990\Faker\Test\Calculator;
 
-use Faker\Calculator\TCNo;
+use Cheremhovo1990\Faker\Calculator\TCNo;
 use PHPUnit\Framework\TestCase;
 
 final class TCNoTest extends TestCase

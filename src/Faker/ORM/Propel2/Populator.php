@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\ORM\Propel2;
+namespace Cheremhovo1990\Faker\ORM\Propel2;
 
 use Propel\Runtime\Propel;
 use Propel\Runtime\ServiceContainer\ServiceContainerInterface;
@@ -16,9 +16,9 @@ class Populator
     protected $quantities = array();
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Cheremhovo1990\Faker\Generator $generator
      */
-    public function __construct(\Faker\Generator $generator)
+    public function __construct(\Cheremhovo1990\Faker\Generator $generator)
     {
         $this->generator = $generator;
     }
@@ -26,13 +26,13 @@ class Populator
     /**
      * Add an order for the generation of $number records for $entity.
      *
-     * @param mixed $entity A Propel ActiveRecord classname, or a \Faker\ORM\Propel2\EntityPopulator instance
+     * @param mixed $entity A Propel ActiveRecord classname, or a \Cheremhovo1990\Faker\ORM\Propel2\EntityPopulator instance
      * @param int   $number The number of entities to populate
      */
     public function addEntity($entity, $number, $customColumnFormatters = array(), $customModifiers = array())
     {
-        if (!$entity instanceof \Faker\ORM\Propel2\EntityPopulator) {
-            $entity = new \Faker\ORM\Propel2\EntityPopulator($entity);
+        if (!$entity instanceof \Cheremhovo1990\Faker\ORM\Propel2\EntityPopulator) {
+            $entity = new \Cheremhovo1990\Faker\ORM\Propel2\EntityPopulator($entity);
         }
         $entity->setColumnFormatters($entity->guessColumnFormatters($this->generator));
         if ($customColumnFormatters) {

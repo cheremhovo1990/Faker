@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ro_RO;
+namespace Cheremhovo1990\Faker\Provider\ro_RO;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * Title: Neghiniţă

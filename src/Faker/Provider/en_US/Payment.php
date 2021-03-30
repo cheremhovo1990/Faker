@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Faker\Provider\en_US;
+namespace Cheremhovo1990\Faker\Provider\en_US;
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
     public function bankAccountNumber()
     {

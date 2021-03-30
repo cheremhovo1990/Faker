@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\el_CY;
+namespace Cheremhovo1990\Faker\Provider\el_CY;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $companySuffix = array(
         'ΛΤΔ',

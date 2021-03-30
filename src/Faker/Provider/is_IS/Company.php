@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Provider\is_IS;
+namespace Cheremhovo1990\Faker\Provider\is_IS;
 
 /**
  * @author Birkir Gudjonsson <birkir.gudjonsson@gmail.com>
  */
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     /**
      * @var array Danish company name formats.

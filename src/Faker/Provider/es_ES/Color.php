@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\es_ES;
+namespace Cheremhovo1990\Faker\Provider\es_ES;
 
-class Color extends \Faker\Provider\Color
+class Color extends \Cheremhovo1990\Faker\Provider\Color
 {
     protected static $safeColorNames = array(
         'amarillo',

@@ -1,12 +1,12 @@
 <?php
 
-namespace Faker\Provider\pl_PL;
+namespace Cheremhovo1990\Faker\Provider\pl_PL;
 
 /**
  * Most popular first and last names published by Ministry of the Interior:
  * @link https://msw.gov.pl/pl/sprawy-obywatelskie/ewidencja-ludnosci-dowo/statystyki-imion-i-nazw
  */
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $lastNameFormat = array(
         '{{lastNameMale}}',
@@ -143,7 +143,7 @@ class Person extends \Faker\Provider\Person
     public static function pesel($birthdate = null, $sex = null)
     {
         if ($birthdate === null) {
-            $birthdate = \Faker\Provider\DateTime::dateTimeThisCentury();
+            $birthdate = \Cheremhovo1990\Faker\Provider\DateTime::dateTimeThisCentury();
         }
 
         $weights = array(1, 3, 7, 9, 1, 3, 7, 9, 1, 3);

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Provider\Image;
+use Cheremhovo1990\Faker\Provider\Image;
 use PHPUnit\Framework\TestCase;
 
 final class ImageTest extends TestCase

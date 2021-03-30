@@ -1,14 +1,14 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Calculator\Iban;
-use Faker\Calculator\Luhn;
-use Faker\Generator;
-use Faker\Provider\Base as BaseProvider;
-use Faker\Provider\DateTime as DateTimeProvider;
-use Faker\Provider\Payment as PaymentProvider;
-use Faker\Provider\Person as PersonProvider;
+use Cheremhovo1990\Faker\Calculator\Iban;
+use Cheremhovo1990\Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\Base as BaseProvider;
+use Cheremhovo1990\Faker\Provider\DateTime as DateTimeProvider;
+use Cheremhovo1990\Faker\Provider\Payment as PaymentProvider;
+use Cheremhovo1990\Faker\Provider\Person as PersonProvider;
 use PHPUnit\Framework\TestCase;
 
 final class PaymentTest extends TestCase
@@ -41,7 +41,7 @@ final class PaymentTest extends TestCase
     {
         $providerPath = realpath(__DIR__ . '/../../../src/Faker/Provider');
         if (file_exists($providerPath.'/'.$locale.'/Payment.php')) {
-            $payment = "\\Faker\\Provider\\$locale\\Payment";
+            $payment = "\\Cheremhovo1990\Faker\\Provider\\$locale\\Payment";
             $this->faker->addProvider(new $payment($this->faker));
         }
     }

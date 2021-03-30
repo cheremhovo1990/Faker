@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker;
+namespace Cheremhovo1990\Faker;
 
 /**
  * Proxy for other generators, to return only unique values. Works with
- * Faker\Generator\Base->unique()
+ * Cheremhovo1990\Faker\Generator\Base->unique()
  */
 class UniqueGenerator
 {

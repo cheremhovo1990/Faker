@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\pt_BR;
+namespace Cheremhovo1990\Faker\Provider\pt_BR;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $cityPrefix = array('São', 'Porto', 'Vila', 'Santa');
     protected static $citySuffix = array('do Norte', 'do Leste', 'do Sul', 'd\'Oeste');

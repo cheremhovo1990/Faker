@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\Test\Provider\fa_IR;
+namespace Cheremhovo1990\Faker\Test\Provider\fa_IR;
 
-use Faker\Provider\fa_IR\Person;
-use Faker\Generator;
+use Cheremhovo1990\Faker\Provider\fa_IR\Person;
+use Cheremhovo1990\Faker\Generator;
 use PHPUnit\Framework\TestCase;
 
 final class PersonTest extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider;
+namespace Cheremhovo1990\Faker\Provider;
 
 /**
  * @author lsv

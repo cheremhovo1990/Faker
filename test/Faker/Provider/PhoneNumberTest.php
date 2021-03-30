@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Generator;
-use Faker\Calculator\Luhn;
-use Faker\Provider\PhoneNumber;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Provider\PhoneNumber;
 use PHPUnit\Framework\TestCase;
 
 final class PhoneNumberTest extends TestCase

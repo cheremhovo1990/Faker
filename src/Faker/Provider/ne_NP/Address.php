@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ne_NP;
+namespace Cheremhovo1990\Faker\Provider\ne_NP;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $wardNumber = array('##', '#');
     protected static $streetSuffix = array(

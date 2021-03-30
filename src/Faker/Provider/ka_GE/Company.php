@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ka_GE;
+namespace Cheremhovo1990\Faker\Provider\ka_GE;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $companyPrefixes = array(
         'შპს', 'შპს', 'შპს', 'სს', 'სს', 'სს', 'კს', 'სს კორპორაცია', 'იმ', 'სპს', 'კოოპერატივი'

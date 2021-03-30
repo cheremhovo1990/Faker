@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\Provider;
+namespace Cheremhovo1990\Faker\Provider;
 
-use Faker\Generator;
-use Faker\UniqueGenerator;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\UniqueGenerator;
 
 class HtmlLorem extends Base
 {

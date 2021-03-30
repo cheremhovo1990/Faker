@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\es_ES;
+namespace Cheremhovo1990\Faker\Provider\es_ES;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * Benito Pérez Galdós

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\bg_BG;
+namespace Cheremhovo1990\Faker\Provider\bg_BG;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $lastNameFormat = array(
         '{{lastNameMale}}',

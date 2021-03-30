@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ka_GE;
+namespace Cheremhovo1990\Faker\Provider\ka_GE;
 
-class Internet extends \Faker\Provider\Internet
+class Internet extends \Cheremhovo1990\Faker\Provider\Internet
 {
     protected static $freeEmailDomain = array(
         'posta.ge', 'boom.ge', 'hotmail.com', 'gmail.com', 'yahoo.com', 'mail.ru', 'avoe.ge'

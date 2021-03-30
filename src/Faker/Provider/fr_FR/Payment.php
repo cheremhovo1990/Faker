@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fr_FR;
+namespace Cheremhovo1990\Faker\Provider\fr_FR;
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
     /**
      * Value Added Tax (VAT)

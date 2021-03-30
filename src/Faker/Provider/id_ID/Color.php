@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\id_ID;
+namespace Cheremhovo1990\Faker\Provider\id_ID;
 
-class Color extends \Faker\Provider\Color
+class Color extends \Cheremhovo1990\Faker\Provider\Color
 {
     /**
      * @link https://id.wikipedia.org/wiki/Warna

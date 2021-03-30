@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\pt_PT;
+namespace Cheremhovo1990\Faker\Provider\pt_PT;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
      /*
      * @link http://en.wikipedia.org/wiki/Telephone_numbers_in_Portugal

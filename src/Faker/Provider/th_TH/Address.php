@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\th_TH;
+namespace Cheremhovo1990\Faker\Provider\th_TH;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $cityPrefix = array(
         'เมือง', 'หมู่บ้าน', 'ท่า',

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\mn_MN;
+namespace Cheremhovo1990\Faker\Provider\mn_MN;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * @link http://ner.query.mn/son

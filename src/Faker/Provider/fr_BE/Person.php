@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fr_BE;
+namespace Cheremhovo1990\Faker\Provider\fr_BE;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $firstNameMale = array(
         'Aaron', 'Adam', 'Adrien', 'Alessio', 'Alexander', 'Alexandre', 'Antoine', 'Arne', 'Arthur', 'Axel', 'Ayoub', 'Baptiste', 'Benjamin',
