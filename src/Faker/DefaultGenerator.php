@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker;
+namespace Cheremhovo1990\Faker;
 
 /**
  * This generator returns a default value for all called properties
- * and methods. It works with Faker\Generator\Base->optional().
+ * and methods. It works with Cheremhovo1990\Faker\Generator\Base->optional().
  */
 class DefaultGenerator
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Provider\da_DK;
+namespace Cheremhovo1990\Faker\Provider\da_DK;
 
 /**
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     /**
      * @var array Danish city suffixes.

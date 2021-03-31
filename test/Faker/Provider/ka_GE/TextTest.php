@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Test\Provider\ka_GE;
+namespace Cheremhovo1990\Faker\Test\Provider\ka_GE;
 
 use PHPUnit\Framework\TestCase;
 
@@ -10,7 +10,7 @@ final class TextTest extends TestCase
 
     protected function setUp()
     {
-        $this->textClass = new \ReflectionClass('Faker\Provider\el_GR\Text');
+        $this->textClass = new \ReflectionClass( 'Cheremhovo1990\Faker\Provider\el_GR\Text');
     }
 
     protected function getMethod($name) {

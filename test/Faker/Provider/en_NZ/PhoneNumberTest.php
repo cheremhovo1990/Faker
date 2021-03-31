@@ -1,16 +1,16 @@
 <?php
 
-namespace Faker\Test\Provider\en_NZ;
+namespace Cheremhovo1990\Faker\Test\Provider\en_NZ;
 
-use Faker\Generator;
-use Faker\Provider\en_NZ\PhoneNumber;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\en_NZ\PhoneNumber;
 use PHPUnit\Framework\TestCase;
 
 final class PhoneNumberTest extends TestCase
 {
 
     /**
-     * @var Faker\Generator
+     * @var Generator
      */
     private $faker;
 

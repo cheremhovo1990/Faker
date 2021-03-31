@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
 use Faker;
 use PHPUnit\Framework\TestCase;
@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class ProviderOverrideTest
  *
- * @package Faker\Test\Provider
+ * @package Cheremhovo1990\Faker\Test\Provider
  *
  * This class tests a large portion of all locale specific providers. It does not test the entire stack, because each
  * locale specific provider (can) has specific implementations. The goal of this test is to test the common denominator
@@ -35,7 +35,7 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testAddress($locale = null)
     {
-        $faker = Faker\Factory::create($locale);
+        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
 
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->city);
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->postcode);
@@ -50,7 +50,7 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testCompany($locale = null)
     {
-        $faker = Faker\Factory::create($locale);
+        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
 
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->company);
     }
@@ -62,7 +62,7 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testDateTime($locale = null)
     {
-        $faker = Faker\Factory::create($locale);
+        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
 
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->century);
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->timezone);
@@ -79,7 +79,7 @@ final class ProviderOverrideTest extends TestCase
             $this->markTestSkipped('Transliterator class not available (intl extension)');
         }
 
-        $faker = Faker\Factory::create($locale);
+        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
 
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->userName);
 
@@ -96,7 +96,7 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testPerson($locale = null)
     {
-        $faker = Faker\Factory::create($locale);
+        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
 
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->name);
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->title);
@@ -111,7 +111,7 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testPhoneNumber($locale = null)
     {
-        $faker = Faker\Factory::create($locale);
+        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
 
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->phoneNumber);
     }
@@ -123,7 +123,7 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testUserAgent($locale = null)
     {
-        $faker = Faker\Factory::create($locale);
+        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
 
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->userAgent);
     }
@@ -137,7 +137,7 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testUuid($locale = null)
     {
-        $faker = Faker\Factory::create($locale);
+        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
 
         $this->assertRegExp(static::TEST_STRING_REGEX, $faker->uuid);
     }

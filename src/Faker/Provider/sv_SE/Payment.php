@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\sv_SE;
+namespace Cheremhovo1990\Faker\Provider\sv_SE;
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
     /**
      * International Bank Account Number (IBAN)

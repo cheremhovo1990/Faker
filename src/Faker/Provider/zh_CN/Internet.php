@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\zh_CN;
+namespace Cheremhovo1990\Faker\Provider\zh_CN;
 
-class Internet extends \Faker\Provider\Internet
+class Internet extends \Cheremhovo1990\Faker\Provider\Internet
 {
     protected static $freeEmailDomain = array(
         'gmail.com', 'yahoo.com', 'hotmail.com', '126.com', '163.com', 'qq.com', 'sohu.com', 'sina.com'

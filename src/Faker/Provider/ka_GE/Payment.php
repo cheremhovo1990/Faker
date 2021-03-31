@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ka_GE;
+namespace Cheremhovo1990\Faker\Provider\ka_GE;
 
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
 
     /**

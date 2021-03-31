@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fi_FI;
+namespace Cheremhovo1990\Faker\Provider\fi_FI;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     /**
      * @link https://www.viestintavirasto.fi/en/internettelephone/numberingoftelecommunicationsnetworks/localcallsandtelecommunicationsareas/mapoftelecommunicationsareas.html

@@ -1,10 +1,10 @@
 <?php
-namespace Faker\Provider\ms_MY;
+namespace Cheremhovo1990\Faker\Provider\ms_MY;
 
-use Faker\Provider\DateTime;
-use Faker\Generator;
+use Cheremhovo1990\Faker\Provider\DateTime;
+use Cheremhovo1990\Faker\Generator;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $firstNameFormat = array(
         '{{firstNameMaleMalay}}',

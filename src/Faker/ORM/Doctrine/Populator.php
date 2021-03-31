@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\ORM\Doctrine;
+namespace Cheremhovo1990\Faker\ORM\Doctrine;
 
 use Doctrine\Common\Persistence\ObjectManager;
-use Faker\Generator;
+use Cheremhovo1990\Faker\Generator;
 
 /**
  * Service class for populating a database using the Doctrine ORM or ODM.
@@ -45,16 +45,16 @@ class Populator
     /**
      * Add an order for the generation of $number records for $entity.
      *
-     * @param mixed $entity A Doctrine classname, or a \Faker\ORM\Doctrine\EntityPopulator instance
+     * @param mixed $entity A Doctrine classname, or a \Cheremhovo1990\Faker\ORM\Doctrine\EntityPopulator instance
      * @param int   $number The number of entities to populate
      */
     public function addEntity($entity, $number, $customColumnFormatters = array(), $customModifiers = array(), $generateId = false)
     {
-        if (!$entity instanceof \Faker\ORM\Doctrine\EntityPopulator) {
+        if (!$entity instanceof \Cheremhovo1990\Faker\ORM\Doctrine\EntityPopulator) {
             if (null === $this->manager) {
                 throw new \InvalidArgumentException("No entity manager passed to Doctrine Populator.");
             }
-            $entity = new \Faker\ORM\Doctrine\EntityPopulator($this->manager->getClassMetadata($entity));
+            $entity = new \Cheremhovo1990\Faker\ORM\Doctrine\EntityPopulator($this->manager->getClassMetadata($entity));
         }
         $entity->setColumnFormatters($entity->guessColumnFormatters($this->generator));
         if ($customColumnFormatters) {

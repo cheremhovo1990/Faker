@@ -1,17 +1,18 @@
 <?php
 
-namespace Faker\Guesser;
+namespace Cheremhovo1990\Faker\Guesser;
 
-use \Faker\Provider\Base;
+use Cheremhovo1990\Faker\Generator;
+use \Cheremhovo1990\Faker\Provider\Base;
 
 class Name
 {
     protected $generator;
 
     /**
-     * @param \Faker\Generator $generator
+     * @param Generator $generator
      */
-    public function __construct(\Faker\Generator $generator)
+    public function __construct(Generator $generator)
     {
         $this->generator = $generator;
     }

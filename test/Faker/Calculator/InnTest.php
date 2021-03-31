@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Calculator;
+namespace Cheremhovo1990\Faker\Test\Calculator;
 
-use Faker\Calculator\Inn;
+use Cheremhovo1990\Faker\Calculator\Inn;
 use PHPUnit\Framework\TestCase;
 
 final class InnTest extends TestCase

@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Test\Provider\ar_SA;
+namespace Cheremhovo1990\Faker\Test\Provider\ar_SA;
 
-use Faker\Generator;
-use Faker\Provider\ar_SA\Person;
-use Faker\Provider\ar_SA\Internet;
-use Faker\Provider\ar_SA\Company;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\ar_SA\Person;
+use Cheremhovo1990\Faker\Provider\ar_SA\Internet;
+use Cheremhovo1990\Faker\Provider\ar_SA\Company;
 use PHPUnit\Framework\TestCase;
 
 final class InternetTest extends TestCase

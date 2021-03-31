@@ -1,8 +1,10 @@
 <?php
 
-namespace Faker\Provider\fi_FI;
+namespace Cheremhovo1990\Faker\Provider\fi_FI;
 
-class Person extends \Faker\Provider\Person
+use Cheremhovo1990\Faker\Provider\DateTime;
+
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $maleNameFormats = array(
         '{{firstNameMale}} {{lastName}}',
@@ -98,7 +100,7 @@ class Person extends \Faker\Provider\Person
         $checksumCharacters = '0123456789ABCDEFHJKLMNPRSTUVWXY';
 
         if (!$birthdate) {
-            $birthdate = \Faker\Provider\DateTime::dateTimeThisCentury();
+            $birthdate = DateTime::dateTimeThisCentury();
         }
         $datePart = $birthdate->format('dmy');
 

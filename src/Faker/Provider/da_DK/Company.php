@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Provider\da_DK;
+namespace Cheremhovo1990\Faker\Provider\da_DK;
 
 /**
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     /**
      * @var array Danish company name formats.

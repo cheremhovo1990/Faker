@@ -1,7 +1,7 @@
 <?php
-namespace Faker\Provider\ro_MD;
+namespace Cheremhovo1990\Faker\Provider\ro_MD;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     // http://en.wikipedia.org/wiki/Romanian_name, prefixes are for more formal purposes
     protected static $maleNameFormats = array(

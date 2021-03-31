@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\de_CH;
+namespace Cheremhovo1990\Faker\Provider\de_CH;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * The Project Gutenberg EBook of Die Leiden des jungen Werther--Buch 1, by

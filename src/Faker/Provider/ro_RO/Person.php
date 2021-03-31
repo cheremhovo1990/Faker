@@ -1,7 +1,9 @@
 <?php
-namespace Faker\Provider\ro_RO;
+namespace Cheremhovo1990\Faker\Provider\ro_RO;
 
-class Person extends \Faker\Provider\Person
+use Cheremhovo1990\Faker\Provider\DateTime;
+
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     // http://en.wikipedia.org/wiki/Romanian_name, prefixes are for more formal purposes
     protected static $maleNameFormats = array(
@@ -153,7 +155,7 @@ class Person extends \Faker\Provider\Person
         } else {
             $dateOfBirthParts = explode('-', $dateOfBirth);
         }
-        $baseDate = \Faker\Provider\DateTime::dateTimeBetween("first day of {$dateOfBirthParts[0]}", "last day of {$dateOfBirthParts[0]}");
+        $baseDate = DateTime::dateTimeBetween("first day of {$dateOfBirthParts[0]}", "last day of {$dateOfBirthParts[0]}");
 
         switch (count($dateOfBirthParts)) {
             case 1:

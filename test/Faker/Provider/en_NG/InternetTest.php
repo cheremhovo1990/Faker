@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Test\Provider\ng_NG;
+namespace Cheremhovo1990\Faker\Test\Provider\en_NG;
 
-use Faker\Generator;
-use Faker\Provider\en_NG\Person;
-use Faker\Provider\en_NG\Internet;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\en_NG\Person;
+use Cheremhovo1990\Faker\Provider\en_NG\Internet;
 use PHPUnit\Framework\TestCase;
 
 final class InternetTest extends TestCase

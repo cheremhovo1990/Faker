@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\uk_UA;
+namespace Cheremhovo1990\Faker\Provider\uk_UA;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * From uk.wikisource.org

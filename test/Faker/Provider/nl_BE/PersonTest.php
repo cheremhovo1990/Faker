@@ -1,11 +1,10 @@
 <?php
 
-namespace Faker\Test\Provider\nl_BE;
+namespace Cheremhovo1990\Faker\Test\Provider\nl_BE;
 
-use Faker\Generator;
-use Faker\Provider\nl_BE\Person;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\nl_BE\Person;
 use PHPUnit\Framework\TestCase;
-use Datetime;
 
 /**
  * @group Person

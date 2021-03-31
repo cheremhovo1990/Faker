@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\Test\Provider\en_US;
+namespace Cheremhovo1990\Faker\Test\Provider\en_US;
 
-use Faker\Provider\en_US\Company;
-use Faker\Generator;
+use Cheremhovo1990\Faker\Provider\en_US\Company;
+use Cheremhovo1990\Faker\Generator;
 use PHPUnit\Framework\TestCase;
 
 final class CompanyTest extends TestCase

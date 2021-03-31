@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\ORM\Doctrine;
+namespace Cheremhovo1990\Faker\ORM\Doctrine;
 
 use Doctrine\Common\Persistence\Mapping\ClassMetadata;
 
@@ -9,9 +9,9 @@ class ColumnTypeGuesser
     protected $generator;
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Cheremhovo1990\Faker\Generator $generator
      */
-    public function __construct(\Faker\Generator $generator)
+    public function __construct(\Cheremhovo1990\Faker\Generator $generator)
     {
         $this->generator = $generator;
     }

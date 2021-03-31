@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Provider\tr_TR;
+namespace Cheremhovo1990\Faker\Provider\tr_TR;
 
-use Faker\Calculator\TCNo;
+use Cheremhovo1990\Faker\Calculator\TCNo;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * @var array Turkish person name formats.

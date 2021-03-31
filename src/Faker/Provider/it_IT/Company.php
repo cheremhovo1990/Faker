@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Provider\it_IT;
+namespace Cheremhovo1990\Faker\Provider\it_IT;
 
-use Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Calculator\Luhn;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $formats = array(
         '{{lastName}} {{companySuffix}}',

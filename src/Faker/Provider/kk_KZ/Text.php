@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\kk_KZ;
+namespace Cheremhovo1990\Faker\Provider\kk_KZ;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * From kk.wikipedia.org

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ko_KR;
+namespace Cheremhovo1990\Faker\Provider\ko_KR;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * From ko.wikisource.org

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\it_IT;
+namespace Cheremhovo1990\Faker\Provider\it_IT;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * Carlo Collodi

@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\ORM\CakePHP;
+namespace Cheremhovo1990\Faker\ORM\CakePHP;
 
 class Populator
 {
@@ -11,15 +11,15 @@ class Populator
     protected $guessers = [];
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Cheremhovo1990\Faker\Generator $generator
      */
-    public function __construct(\Faker\Generator $generator)
+    public function __construct(\Cheremhovo1990\Faker\Generator $generator)
     {
         $this->generator = $generator;
     }
 
     /**
-     * @return \Faker\Generator
+     * @return \Cheremhovo1990\Faker\Generator
      */
     public function getGenerator()
     {

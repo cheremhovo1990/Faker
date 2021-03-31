@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ka_GE;
+namespace Cheremhovo1990\Faker\Provider\ka_GE;
 
-class Color extends \Faker\Provider\Color
+class Color extends \Cheremhovo1990\Faker\Provider\Color
 {
     protected static $safeColorNames = array(
         'ალისფერი', 'ვარდისფერი', 'თეთრი', 'იასამნისფერი', 'ლურჯი', 'მუქი ლურჯი', 'მწვანე', 'ნარინჯისფერი',

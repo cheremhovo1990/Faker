@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\cs_CZ;
+namespace Cheremhovo1990\Faker\Provider\cs_CZ;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     /**
      * @var array Czech company name formats.

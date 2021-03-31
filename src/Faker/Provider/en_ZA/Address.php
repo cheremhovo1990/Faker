@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_ZA;
+namespace Cheremhovo1990\Faker\Provider\en_ZA;
 
-class Address extends \Faker\Provider\en_US\Address
+class Address extends \Cheremhovo1990\Faker\Provider\en_US\Address
 {
     protected static $cityPrefix = array('North', 'East', 'West', 'South', 'New', 'Lake', 'Port');
     protected static $citySuffix = array('fontein','town', 'ton', 'land', 'ville', 'berg', 'burgh', 'borough', 'bury', 'view', 'port', 'mouth', 'stad', 'furt', 'chester', 'mouth', 'fort', 'haven', 'side', 'shire');

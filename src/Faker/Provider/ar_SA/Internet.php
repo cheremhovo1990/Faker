@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ar_SA;
+namespace Cheremhovo1990\Faker\Provider\ar_SA;
 
-class Internet extends \Faker\Provider\Internet
+class Internet extends \Cheremhovo1990\Faker\Provider\Internet
 {
     protected static $userNameFormats = array(
         '{{lastNameAscii}}.{{firstNameAscii}}',

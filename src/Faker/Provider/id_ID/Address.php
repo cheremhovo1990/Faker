@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\id_ID;
+namespace Cheremhovo1990\Faker\Provider\id_ID;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     /**
      * @link http://bandung.go.id/images/download/daftarruasjalan.htm

@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Provider\kk_KZ;
+namespace Cheremhovo1990\Faker\Provider\kk_KZ;
 
-use \Faker\Provider\DateTime;
+use \Cheremhovo1990\Faker\Provider\DateTime;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
 
     const GENDER_MALE = 0;

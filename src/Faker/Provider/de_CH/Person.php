@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\de_CH;
+namespace Cheremhovo1990\Faker\Provider\de_CH;
 
-class Person extends \Faker\Provider\de_DE\Person
+class Person extends \Cheremhovo1990\Faker\Provider\de_DE\Person
 {
     /**
      * @link http://www.bfs.admin.ch/bfs/portal/de/index/themen/01/02/blank/dos/prenoms/02.html
@@ -94,12 +94,12 @@ class Person extends \Faker\Provider\de_DE\Person
      * fr_CH provider. In the german-speaking part of Switzerland, the AVS13
      * number is generally known as AHV13.
      *
-     * @see \Faker\Provider\fr_CH\Person::avs13()
+     * @see \Cheremhovo1990\Faker\Provider\fr_CH\Person::avs13()
      * @return string
      */
     public static function ahv13()
     {
-        return \Faker\Provider\fr_CH\Person::avs13();
+        return \Cheremhovo1990\Faker\Provider\fr_CH\Person::avs13();
     }
 
     /**
@@ -107,11 +107,11 @@ class Person extends \Faker\Provider\de_DE\Person
      *
      * This function acts as an alias for the function defined in the fr_CH provider.
      *
-     * @see \Faker\Provider\fr_CH\Person::avs13()
+     * @see \Cheremhovo1990\Faker\Provider\fr_CH\Person::avs13()
      * @return string
      */
     public static function avs13()
     {
-        return \Faker\Provider\fr_CH\Person::avs13();
+        return \Cheremhovo1990\Faker\Provider\fr_CH\Person::avs13();
     }
 }

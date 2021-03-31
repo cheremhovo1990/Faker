@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Factory;
+use Cheremhovo1990\Faker\Factory;
 use PHPUnit\Framework\TestCase;
 
 final class LocalizationTest extends TestCase

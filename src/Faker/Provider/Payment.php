@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\Provider;
+namespace Cheremhovo1990\Faker\Provider;
 
-use Faker\Calculator\Iban;
-use Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Calculator\Iban;
+use Cheremhovo1990\Faker\Calculator\Luhn;
 
 class Payment extends Base
 {

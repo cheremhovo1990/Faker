@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ro_RO;
+namespace Cheremhovo1990\Faker\Provider\ro_RO;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     protected static $normalFormats = array(
         'landline' => array(

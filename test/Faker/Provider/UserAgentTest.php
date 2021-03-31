@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Provider\UserAgent;
+use Cheremhovo1990\Faker\Provider\UserAgent;
 use PHPUnit\Framework\TestCase;
 
 final class UserAgentTest extends TestCase

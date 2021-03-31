@@ -1,6 +1,6 @@
-<?php namespace Faker\Provider\el_GR;
+<?php namespace Cheremhovo1990\Faker\Provider\el_GR;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $companySuffix = array(
         'Ο.Ε',

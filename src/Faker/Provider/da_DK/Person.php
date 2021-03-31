@@ -1,13 +1,13 @@
 <?php
 
-namespace Faker\Provider\da_DK;
+namespace Cheremhovo1990\Faker\Provider\da_DK;
 
 /**
  * @link http://www.danskernesnavne.navneforskning.ku.dk/Personnavne.asp
  *
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * @var array Danish person name formats.

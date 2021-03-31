@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\it_CH;
+namespace Cheremhovo1990\Faker\Provider\it_CH;
 
-class Person extends \Faker\Provider\it_IT\Person
+class Person extends \Cheremhovo1990\Faker\Provider\it_IT\Person
 {
     /**
      * @link http://www.bfs.admin.ch/bfs/portal/de/index/themen/01/02/blank/dos/prenoms/02.html
@@ -91,11 +91,11 @@ class Person extends \Faker\Provider\it_IT\Person
      *
      * This function acts as an alias for the function defined in the fr_CH provider.
      *
-     * @see \Faker\Provider\fr_CH\Person::avs13()
+     * @see \Cheremhovo1990\Faker\Provider\fr_CH\Person::avs13()
      * @return string
      */
     public static function avs13()
     {
-        return \Faker\Provider\fr_CH\Person::avs13();
+        return \Cheremhovo1990\Faker\Provider\fr_CH\Person::avs13();
     }
 }

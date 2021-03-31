@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\ORM\CakePHP;
+namespace Cheremhovo1990\Faker\ORM\CakePHP;
 
 use Cake\ORM\TableRegistry;
 

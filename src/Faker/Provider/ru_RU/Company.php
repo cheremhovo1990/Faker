@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ru_RU;
+namespace Cheremhovo1990\Faker\Provider\ru_RU;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $companyNameFormats = array(
         '{{companyPrefix}} {{companyNameElement}}',
@@ -106,7 +106,7 @@ class Company extends \Faker\Provider\Company
         }
         $area_code = str_pad($area_code, 2, '0', STR_PAD_LEFT);
         $inn_base =  $area_code . static::numerify('#######');
-        return $inn_base . \Faker\Calculator\Inn::checksum($inn_base);
+        return $inn_base . \Cheremhovo1990\Faker\Calculator\Inn::checksum($inn_base);
     }
 
     public static function kpp($inn = "")

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_NZ;
+namespace Cheremhovo1990\Faker\Provider\en_NZ;
 
-class Internet extends \Faker\Provider\Internet
+class Internet extends \Cheremhovo1990\Faker\Provider\Internet
 {
     /**
      * An array of New Zealand TLDs.

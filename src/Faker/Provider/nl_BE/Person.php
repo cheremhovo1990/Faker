@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Provider\nl_BE;
+namespace Cheremhovo1990\Faker\Provider\nl_BE;
 
-use Faker\Provider\DateTime;
+use Cheremhovo1990\Faker\Provider\DateTime;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $firstNameMale = array(
         'Aaron', 'Adam', 'Adrien', 'Alessio', 'Alexander', 'Alexandre', 'Alexis',

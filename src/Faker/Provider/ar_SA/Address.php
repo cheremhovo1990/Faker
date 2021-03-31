@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ar_SA;
+namespace Cheremhovo1990\Faker\Provider\ar_SA;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $streetPrefix = array('شارع', 'طريق', 'ممر');
 

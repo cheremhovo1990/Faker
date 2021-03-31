@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fr_FR;
+namespace Cheremhovo1990\Faker\Provider\fr_FR;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     // Phone numbers can't start by 00 in France
     // 01 is the most common prefix

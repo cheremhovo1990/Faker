@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\hr_HR;
+namespace Cheremhovo1990\Faker\Provider\hr_HR;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * @link http://www.behindthename.com/top/lists/croatia/2009

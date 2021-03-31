@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\cs_CZ;
+namespace Cheremhovo1990\Faker\Provider\cs_CZ;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     public function realText($maxNbChars = 200, $indexSize = 2)
     {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker;
+namespace Cheremhovo1990\Faker;
 
 /**
  * Proxy for other generators, to return only valid values. Works with
- * Faker\Generator\Base->valid()
+ * Cheremhovo1990\Faker\Generator\Base->valid()
  */
 class ValidGenerator
 {

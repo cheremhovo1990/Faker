@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Provider\is_IS;
+namespace Cheremhovo1990\Faker\Provider\is_IS;
 
 /**
  * @author Birkir Gudjonsson <birkir.gudjonsson@gmail.com>
  */
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * @var array Icelandic person name formats.

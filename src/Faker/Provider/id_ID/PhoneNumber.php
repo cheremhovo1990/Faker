@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\id_ID;
+namespace Cheremhovo1990\Faker\Provider\id_ID;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     protected static $formats = array(
         // regional numbers

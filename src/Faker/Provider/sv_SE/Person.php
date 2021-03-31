@@ -1,10 +1,11 @@
 <?php
 
-namespace Faker\Provider\sv_SE;
+namespace Cheremhovo1990\Faker\Provider\sv_SE;
 
-use Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Provider\DateTime;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $formats = array(
         '{{firstName}} {{lastName}}',
@@ -123,7 +124,7 @@ class Person extends \Faker\Provider\Person
     public function personalIdentityNumber(\DateTime $birthdate = null, $gender = null)
     {
         if (!$birthdate) {
-            $birthdate = \Faker\Provider\DateTime::dateTimeThisCentury();
+            $birthdate = DateTime::dateTimeThisCentury();
         }
         $datePart = $birthdate->format('ymd');
 

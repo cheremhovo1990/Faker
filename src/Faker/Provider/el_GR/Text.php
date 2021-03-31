@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\el_GR;
+namespace Cheremhovo1990\Faker\Provider\el_GR;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * From el.wikisource.org.

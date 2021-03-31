@@ -1,26 +1,26 @@
 <?php
 
-namespace Faker\Provider;
+namespace Cheremhovo1990\Faker\Provider;
 
-use Faker\Generator;
-use Faker\DefaultGenerator;
-use Faker\UniqueGenerator;
-use Faker\ValidGenerator;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\DefaultGenerator;
+use Cheremhovo1990\Faker\UniqueGenerator;
+use Cheremhovo1990\Faker\ValidGenerator;
 
 class Base
 {
     /**
-     * @var \Faker\Generator
+     * @var \Cheremhovo1990\Faker\Generator
      */
     protected $generator;
 
     /**
-     * @var \Faker\UniqueGenerator
+     * @var \Cheremhovo1990\Faker\UniqueGenerator
      */
     protected $unique;
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Cheremhovo1990\Faker\Generator $generator
      */
     public function __construct(Generator $generator)
     {

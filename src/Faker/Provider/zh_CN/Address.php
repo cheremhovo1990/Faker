@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\zh_CN;
+namespace Cheremhovo1990\Faker\Provider\zh_CN;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
 
     protected static $cites = array(

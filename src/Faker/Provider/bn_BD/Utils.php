@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider\bn_BD;
+namespace Cheremhovo1990\Faker\Provider\bn_BD;
 
 class Utils
 {

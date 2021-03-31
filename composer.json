@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Faker\\": "src/Faker/"
+            "Cheremhovo1990\\Faker\\": "src/Faker/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Faker\\Test\\": "test/Faker/"
+            "Cheremhovo1990\\Faker\\Test\\": "test/Faker/"
         }
     },
     "extra": {

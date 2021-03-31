@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\nl_NL;
+namespace Cheremhovo1990\Faker\Provider\nl_NL;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     /**
      * @see https://nl.wikipedia.org/wiki/Lijst_van_beroepen

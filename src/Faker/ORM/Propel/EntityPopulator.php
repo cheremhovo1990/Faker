@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\ORM\Propel;
+namespace Cheremhovo1990\Faker\ORM\Propel;
 
-use \Faker\Provider\Base;
+use \Cheremhovo1990\Faker\Provider\Base;
 use \ColumnMap;
 
 /**
@@ -51,17 +51,17 @@ class EntityPopulator
     }
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Cheremhovo1990\Faker\Generator $generator
      * @return array
      */
-    public function guessColumnFormatters(\Faker\Generator $generator)
+    public function guessColumnFormatters(\Cheremhovo1990\Faker\Generator $generator)
     {
         $formatters = array();
         $class = $this->class;
         $peerClass = $class::PEER;
         $tableMap = $peerClass::getTableMap();
-        $nameGuesser = new \Faker\Guesser\Name($generator);
-        $columnTypeGuesser = new \Faker\ORM\Propel\ColumnTypeGuesser($generator);
+        $nameGuesser = new \Cheremhovo1990\Faker\Guesser\Name($generator);
+        $columnTypeGuesser = new \Cheremhovo1990\Faker\ORM\Propel\ColumnTypeGuesser($generator);
         foreach ($tableMap->getColumns() as $columnMap) {
             // skip behavior columns, handled by modifiers
             if ($this->isColumnBehavior($columnMap)) {
@@ -136,10 +136,10 @@ class EntityPopulator
     }
 
     /**
-     * @param \Faker\Generator $generator
+     * @param \Cheremhovo1990\Faker\Generator $generator
      * @return array
      */
-    public function guessModifiers(\Faker\Generator $generator)
+    public function guessModifiers(\Cheremhovo1990\Faker\Generator $generator)
     {
         $modifiers = array();
         $class = $this->class;

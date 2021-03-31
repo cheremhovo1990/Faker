@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Calculator;
+namespace Cheremhovo1990\Faker\Test\Calculator;
 
-use Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Calculator\Luhn;
 use PHPUnit\Framework\TestCase;
 
 final class LuhnTest extends TestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ms_MY;
+namespace Cheremhovo1990\Faker\Provider\ms_MY;
 
-class Miscellaneous extends \Faker\Provider\Miscellaneous
+class Miscellaneous extends \Cheremhovo1990\Faker\Provider\Miscellaneous
 {
     /**
      * @link https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Malaysia

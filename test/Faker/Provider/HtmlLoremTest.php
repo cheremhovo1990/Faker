@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Generator;
-use Faker\Provider\HtmlLorem;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\HtmlLorem;
 use PHPUnit\Framework\TestCase;
 
 final class HtmlLoremTest extends TestCase

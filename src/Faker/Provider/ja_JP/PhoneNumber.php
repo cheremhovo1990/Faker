@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ja_JP;
+namespace Cheremhovo1990\Faker\Provider\ja_JP;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     /**
      * @link http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/number_shitei.html#kotei-denwa

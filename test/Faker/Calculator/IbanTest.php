@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Calculator;
+namespace Cheremhovo1990\Faker\Test\Calculator;
 
-use Faker\Calculator\Iban;
+use Cheremhovo1990\Faker\Calculator\Iban;
 use PHPUnit\Framework\TestCase;
 
 final class IbanTest extends TestCase

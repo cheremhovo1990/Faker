@@ -1,12 +1,12 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Generator;
-use Faker\Provider\Company;
-use Faker\Provider\Internet;
-use Faker\Provider\Lorem;
-use Faker\Provider\Person;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\Company;
+use Cheremhovo1990\Faker\Provider\Internet;
+use Cheremhovo1990\Faker\Provider\Lorem;
+use Cheremhovo1990\Faker\Provider\Person;
 use PHPUnit\Framework\TestCase;
 
 final class InternetTest extends TestCase
@@ -104,15 +104,15 @@ final class InternetTest extends TestCase
     {
         $providerPath = realpath(__DIR__ . '/../../../src/Faker/Provider');
         if (file_exists($providerPath.'/'.$locale.'/Internet.php')) {
-            $internet = "\\Faker\\Provider\\$locale\\Internet";
+            $internet = "\\Cheremhovo1990\Faker\\Provider\\$locale\\Internet";
             $this->faker->addProvider(new $internet($this->faker));
         }
         if (file_exists($providerPath.'/'.$locale.'/Person.php')) {
-            $person = "\\Faker\\Provider\\$locale\\Person";
+            $person = "\\Cheremhovo1990\Faker\\Provider\\$locale\\Person";
             $this->faker->addProvider(new $person($this->faker));
         }
         if (file_exists($providerPath.'/'.$locale.'/Company.php')) {
-            $company = "\\Faker\\Provider\\$locale\\Company";
+            $company = "\\Cheremhovo1990\Faker\\Provider\\$locale\\Company";
             $this->faker->addProvider(new $company($this->faker));
         }
     }

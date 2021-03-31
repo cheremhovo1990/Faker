@@ -1,9 +1,9 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$generator = Faker\Factory::create();
+$generator = Cheremhovo1990\Faker\Factory::create();
 $generator->seed(1);
-$documentor = new Faker\Documentor($generator);
+$documentor = new Cheremhovo1990\Faker\Documentor($generator);
 ?>
 <?php foreach ($documentor->getFormatters() as $provider => $formatters): ?>
 

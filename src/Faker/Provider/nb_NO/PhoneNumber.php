@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\nb_NO;
+namespace Cheremhovo1990\Faker\Provider\nb_NO;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     /**
     * @var array Norwegian phone number formats

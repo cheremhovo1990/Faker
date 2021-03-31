@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\bn_BD;
+namespace Cheremhovo1990\Faker\Provider\bn_BD;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $cityPrefix = array('দক্ষিন', 'পূর্ব', 'পশ্চিম', 'উত্তর', 'নতুন', 'লেইক', 'পোর্ট');
     protected static $citySuffix = array('টাউন', 'তলা', 'হাট', 'খানা');

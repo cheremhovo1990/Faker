@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_PH;
+namespace Cheremhovo1990\Faker\Provider\en_PH;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     // http://en.wikipedia.org/wiki/Telephone_numbers_in_the_Philippines
     protected static $mobileFormats = array(

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\nl_BE;
+namespace Cheremhovo1990\Faker\Provider\nl_BE;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $postcodes = array(
         '2970', '3700', '7510', '9420', '8511', '3800', '9300', '9880', '3200', '8700', '8211', '2630', '4557',

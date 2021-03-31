@@ -1,13 +1,13 @@
 <?php
 
-namespace Faker\Provider\at_AT;
+namespace Cheremhovo1990\Faker\Provider\at_AT;
 
 /**
  * Class Payment
  *
- * @package Faker\Provider\at_AT
+ * @package Cheremhovo1990\Faker\Provider\at_AT
  */
-class Payment extends \Faker\Provider\Payment
+class Payment extends \Cheremhovo1990\Faker\Provider\Payment
 {
     /**
      * Value Added Tax (VAT)

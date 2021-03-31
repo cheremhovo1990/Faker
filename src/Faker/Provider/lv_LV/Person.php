@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Provider\lv_LV;
+namespace Cheremhovo1990\Faker\Provider\lv_LV;
 
-use Faker\Calculator\Luhn;
-use Faker\Provider\DateTime;
+use Cheremhovo1990\Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Provider\DateTime;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * {@link} http://vardunozime.lv/names-male

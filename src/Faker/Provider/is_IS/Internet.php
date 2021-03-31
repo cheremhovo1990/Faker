@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Provider\is_IS;
+namespace Cheremhovo1990\Faker\Provider\is_IS;
 
 /**
  * @author Birkir Gudjonsson <birkir.gudjonsson@gmail.com>
  */
-class Internet extends \Faker\Provider\Internet
+class Internet extends \Cheremhovo1990\Faker\Provider\Internet
 {
     /**
      * @var array Some email domains in Denmark.

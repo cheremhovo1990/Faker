@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\ka_GE;
+namespace Cheremhovo1990\Faker\Provider\ka_GE;
 
-class DateTime extends \Faker\Provider\DateTime
+class DateTime extends \Cheremhovo1990\Faker\Provider\DateTime
 {
 
     public static function dayOfWeek($max = 'now')

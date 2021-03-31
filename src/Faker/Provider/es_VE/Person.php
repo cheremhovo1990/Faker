@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\es_VE;
+namespace Cheremhovo1990\Faker\Provider\es_VE;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * CNE is the official national election registry org.

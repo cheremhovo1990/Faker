@@ -1,13 +1,13 @@
 <?php
 
-namespace Faker\Provider\en_AU;
+namespace Cheremhovo1990\Faker\Provider\en_AU;
 
 /**
  * Class Address
  * @see http://www.ipaustralia.gov.au/about-us/corporate/address-standards/
- * @package Faker\Provider\en_AU
+ * @package Cheremhovo1990\Faker\Provider\en_AU
  */
-class Address extends \Faker\Provider\en_US\Address
+class Address extends \Cheremhovo1990\Faker\Provider\en_US\Address
 {
     protected static $cityPrefix = array('North', 'East', 'West', 'South', 'New', 'Lake', 'Port', 'St.');
 

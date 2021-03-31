@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\tr_TR;
+namespace Cheremhovo1990\Faker\Provider\tr_TR;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $buildingNumber = array('###', '##', '#');
 

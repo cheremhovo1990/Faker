@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Faker\Test\Calculator;
+namespace Cheremhovo1990\Faker\Test\Calculator;
 
 
-use Faker\Calculator\Ean;
+use Cheremhovo1990\Faker\Calculator\Ean;
 use PHPUnit\Framework\TestCase;
 
 final class EanTest extends TestCase

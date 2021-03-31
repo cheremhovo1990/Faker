@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\uk_UA;
+namespace Cheremhovo1990\Faker\Provider\uk_UA;
 
-class Company extends \Faker\Provider\Company
+class Company extends \Cheremhovo1990\Faker\Provider\Company
 {
     protected static $formats = array(
         '{{companyName}}',                                      // Вектор

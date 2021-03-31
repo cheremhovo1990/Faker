@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\hu_HU;
+namespace Cheremhovo1990\Faker\Provider\hu_HU;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      *

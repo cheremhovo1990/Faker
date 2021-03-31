@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Faker\ORM\Spot;
+namespace Cheremhovo1990\Faker\ORM\Spot;
 
 use Spot\Locator;
 
@@ -17,10 +17,10 @@ class Populator
 
     /**
      * Populator constructor.
-     * @param \Faker\Generator $generator
+     * @param \Cheremhovo1990\Faker\Generator $generator
      * @param Locator|null $locator
      */
-    public function __construct(\Faker\Generator $generator, Locator $locator = null)
+    public function __construct(\Cheremhovo1990\Faker\Generator $generator, Locator $locator = null)
     {
         $this->generator = $generator;
         $this->locator = $locator;

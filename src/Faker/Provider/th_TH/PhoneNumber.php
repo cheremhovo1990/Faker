@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\th_TH;
+namespace Cheremhovo1990\Faker\Provider\th_TH;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
     /**
      * @var array Thai phone number formats

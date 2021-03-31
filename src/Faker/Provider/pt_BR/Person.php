@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Provider\pt_BR;
+namespace Cheremhovo1990\Faker\Provider\pt_BR;
 
 require_once "check_digit.php";
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $maleNameFormats = array(
         '{{firstNameMale}} {{lastName}}',

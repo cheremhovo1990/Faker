@@ -1,9 +1,9 @@
 <?php
 
-namespace Faker\Test\Provider\en_ZA;
+namespace Cheremhovo1990\Faker\Test\Provider\en_ZA;
 
-use Faker\Generator;
-use Faker\Provider\en_ZA\PhoneNumber;
+use Cheremhovo1990\Faker\Generator;
+use Cheremhovo1990\Faker\Provider\en_ZA\PhoneNumber;
 use PHPUnit\Framework\TestCase;
 
 final class PhoneNumberTest extends TestCase

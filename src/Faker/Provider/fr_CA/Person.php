@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fr_CA;
+namespace Cheremhovo1990\Faker\Provider\fr_CA;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $maleNameFormats = array(
         '{{firstNameMale}} {{lastName}}',
@@ -25,7 +25,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * This list is more or less the same as in \Faker\Provider\fr_FR\Person.php
+     * This list is more or less the same as in \Cheremhovo1990\Faker\Provider\fr_FR\Person.php
      * Some common names were added and other removed.
      */
     protected static $firstNameMale = array(

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\hy_AM;
+namespace Cheremhovo1990\Faker\Provider\hy_AM;
 
-class PhoneNumber extends \Faker\Provider\PhoneNumber
+class PhoneNumber extends \Cheremhovo1990\Faker\Provider\PhoneNumber
 {
 
     protected static $codes = array(91, 96, 99, 43, 77, 93, 94, 98, 97, 77, 55, 95, 41, 49);

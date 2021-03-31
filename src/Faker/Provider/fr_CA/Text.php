@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fr_CA;
+namespace Cheremhovo1990\Faker\Provider\fr_CA;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
    /**
      * The Project Gutenberg EBook of La chasse galerie, by Honoré Beaugrand

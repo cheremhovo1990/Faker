@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\nl_NL;
+namespace Cheremhovo1990\Faker\Provider\nl_NL;
 
-class Color extends \Faker\Provider\Color
+class Color extends \Cheremhovo1990\Faker\Provider\Color
 {
     protected static $safeColorNames = array(
         'zwart', 'kastanjebruin', 'donkergroen', 'marine', 'olijfgroen',

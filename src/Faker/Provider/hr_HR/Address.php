@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\hr_HR;
+namespace Cheremhovo1990\Faker\Provider\hr_HR;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     /**
      * @link https://hr.wikipedia.org/wiki/Dodatak:Popis_ulica_u_Baranji

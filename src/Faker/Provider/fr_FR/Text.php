@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\fr_FR;
+namespace Cheremhovo1990\Faker\Provider\fr_FR;
 
-class Text extends \Faker\Provider\Text
+class Text extends \Cheremhovo1990\Faker\Provider\Text
 {
     /**
      * The Project Gutenberg EBook of Madame Bovary, by Gustave Flaubert

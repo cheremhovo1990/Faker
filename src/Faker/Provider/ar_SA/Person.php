@@ -1,10 +1,10 @@
 <?php
 
-namespace Faker\Provider\ar_SA;
+namespace Cheremhovo1990\Faker\Provider\ar_SA;
 
-use Faker\Calculator\Luhn;
+use Cheremhovo1990\Faker\Calculator\Luhn;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     protected static $maleNameFormats = array(
         '{{firstNameMale}} {{lastName}}',

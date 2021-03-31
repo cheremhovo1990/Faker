@@ -1,11 +1,11 @@
 <?php
 
-namespace Faker\Provider\da_DK;
+namespace Cheremhovo1990\Faker\Provider\da_DK;
 
 /**
  * @author Antoine Corcy <contact@sbin.dk>
  */
-class Internet extends \Faker\Provider\Internet
+class Internet extends \Cheremhovo1990\Faker\Provider\Internet
 {
     /**
      * @var array Some safe email TLD.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\tr_TR;
+namespace Cheremhovo1990\Faker\Provider\tr_TR;
 
-class Color extends \Faker\Provider\Color
+class Color extends \Cheremhovo1990\Faker\Provider\Color
 {
     /**
      * @link http://tr.wikipedia.org/wiki/Renkler_listesi

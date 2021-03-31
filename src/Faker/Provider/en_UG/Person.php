@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\en_UG;
+namespace Cheremhovo1990\Faker\Provider\en_UG;
 
-class Person extends \Faker\Provider\Person
+class Person extends \Cheremhovo1990\Faker\Provider\Person
 {
     /**
      * It is very common in Uganda for people to arrange their names as

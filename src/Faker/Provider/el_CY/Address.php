@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Provider\el_CY;
+namespace Cheremhovo1990\Faker\Provider\el_CY;
 
-class Address extends \Faker\Provider\Address
+class Address extends \Cheremhovo1990\Faker\Provider\Address
 {
     protected static $citySuffix = array('Λευκωσία', 'Λεμεσός', 'Λάρνακα', 'Πάφος');
     protected static $streetSuffix = array();

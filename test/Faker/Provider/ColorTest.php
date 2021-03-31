@@ -1,8 +1,8 @@
 <?php
 
-namespace Faker\Test\Provider;
+namespace Cheremhovo1990\Faker\Test\Provider;
 
-use Faker\Provider\Color;
+use Cheremhovo1990\Faker\Provider\Color;
 use PHPUnit\Framework\TestCase;
 
 final class ColorTest extends TestCase

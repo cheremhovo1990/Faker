@@ -1,6 +1,6 @@
 <?php
 
-namespace Faker\Provider\pt_BR;
+namespace Cheremhovo1990\Faker\Provider\pt_BR;
 
 /**
  * Calculates one MOD 11 check digit based on customary Brazilian algorithms.
