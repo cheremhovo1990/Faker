@@ -225,7 +225,7 @@ class Generator
         }
     }
 
-    public function format($formatter, $arguments = array())
+    public function format($formatter, $arguments = [])
     {
         return call_user_func_array($this->getFormatter($formatter), $arguments);
     }

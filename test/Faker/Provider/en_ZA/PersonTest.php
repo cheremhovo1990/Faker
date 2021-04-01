@@ -6,12 +6,16 @@ use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\en_ZA\Person;
 use Cheremhovo1990\Faker\Provider\DateTime;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class PersonTest extends TestCase
 {
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new Person($faker));
@@ -24,8 +28,12 @@ final class PersonTest extends TestCase
         $idNumber = $this->faker->idNumber();
 
         $this->assertEquals(13, strlen($idNumber));
-        $this->assertRegExp('#^\d{13}$#', $idNumber);
-        $this->assertInternalType('string', $idNumber);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp('#^\d{13}$#', $idNumber);
+        } else {
+            $this->assertMatchesRegularExpression('#^\d{13}$#', $idNumber);
+        }
+        $this->assertIsString($idNumber);
     }
 
     public function testIdNumberForMales()

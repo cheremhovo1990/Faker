@@ -5,7 +5,11 @@ namespace Cheremhovo1990\Faker\Test\Provider\en_IN;
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\en_IN\Address;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class AddressTest extends TestCase
 {
 
@@ -14,7 +18,7 @@ final class AddressTest extends TestCase
    */
   private $faker;
 
-  protected function setUp()
+  protected function setUp(): void
   {
     $faker = new Generator();
     $faker->addProvider(new Address($faker));
@@ -25,32 +29,51 @@ final class AddressTest extends TestCase
   {
     $city = $this->faker->city();
     $this->assertNotEmpty($city);
-    $this->assertInternalType('string', $city);
-    $this->assertRegExp('/[A-Z][a-z]+/', $city);
+    $this->assertIsString($city);
+    if (version_compare(Version::id(), '8.0', '<=')) {
+      $this->assertRegExp('/[A-Z][a-z]+/', $city);
+    } else {
+      $this->assertMatchesRegularExpression('/[A-Z][a-z]+/', $city);
+    }
+
   }
 
   public function testCountry()
   {
     $country = $this->faker->country();
     $this->assertNotEmpty($country);
-    $this->assertInternalType('string', $country);
-    $this->assertRegExp('/[A-Z][a-z]+/', $country);
+    $this->assertIsString($country);
+    if (version_compare(Version::id(), '8.0', '<=')) {
+      $this->assertRegExp('/[A-Z][a-z]+/', $country);
+    } else {
+      $this->assertMatchesRegularExpression('/[A-Z][a-z]+/', $country);
+    }
+
   }
 
   public function testLocalityName()
   {
     $localityName = $this->faker->localityName();
     $this->assertNotEmpty($localityName);
-    $this->assertInternalType('string', $localityName);
-    $this->assertRegExp('/[A-Z][a-z]+/', $localityName);
+    $this->assertIsString($localityName);
+    if (version_compare(Version::id(), '8.0', '<=')) {
+      $this->assertRegExp('/[A-Z][a-z]+/', $localityName);
+    } else {
+      $this->assertMatchesRegularExpression('/[A-Z][a-z]+/', $localityName);
+    }
+
   }
 
   public function testAreaSuffix()
   {
     $areaSuffix = $this->faker->areaSuffix();
     $this->assertNotEmpty($areaSuffix);
-    $this->assertInternalType('string', $areaSuffix);
-    $this->assertRegExp('/[A-Z][a-z]+/', $areaSuffix);
+    $this->assertIsString($areaSuffix);
+    if (version_compare(Version::id(), '8.0', '<=')) {
+      $this->assertRegExp('/[A-Z][a-z]+/', $areaSuffix);
+    } else {
+      $this->assertMatchesRegularExpression('/[A-Z][a-z]+/', $areaSuffix);
+    }
   }
 }
 

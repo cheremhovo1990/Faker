@@ -5,7 +5,11 @@ namespace Cheremhovo1990\Faker\Test\Provider\en_US;
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\en_US\PhoneNumber;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class PhoneNumberTest extends TestCase
 {
 
@@ -14,7 +18,7 @@ final class PhoneNumberTest extends TestCase
      */
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new PhoneNumber($faker));
@@ -46,7 +50,12 @@ final class PhoneNumberTest extends TestCase
             }
 
             // Test format
-            $this->assertRegExp('/^(\+?1)?([ -.]*\d{3}[ -.]*| *\(\d{3}\) *)\d{3}[-.]?\d{4}$/', $baseNumber);
+            if (version_compare(Version::id(), '8.0', '<=')) {
+                $this->assertRegExp('/^(\+?1)?([ -.]*\d{3}[ -.]*| *\(\d{3}\) *)\d{3}[-.]?\d{4}$/', $baseNumber);
+            } else {
+                $this->assertMatchesRegularExpression('/^(\+?1)?([ -.]*\d{3}[ -.]*| *\(\d{3}\) *)\d{3}[-.]?\d{4}$/', $baseNumber);
+            }
+
         }
     }
 
@@ -79,7 +88,12 @@ final class PhoneNumberTest extends TestCase
             }
 
             // Test format
-            $this->assertRegExp('/^(\+?1)?([ -.]*\d{3}[ -.]*| *\(\d{3}\) *)\d{3}[-.]?\d{4}$/', $number);
+            if (version_compare(Version::id(), '8.0', '<=')) {
+                $this->assertRegExp('/^(\+?1)?([ -.]*\d{3}[ -.]*| *\(\d{3}\) *)\d{3}[-.]?\d{4}$/', $number);
+            } else {
+                $this->assertMatchesRegularExpression('/^(\+?1)?([ -.]*\d{3}[ -.]*| *\(\d{3}\) *)\d{3}[-.]?\d{4}$/', $number);
+            }
+
         }
     }
 }

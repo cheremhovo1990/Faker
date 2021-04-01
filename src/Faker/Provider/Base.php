@@ -180,9 +180,9 @@ class Base
      *
      * @return array New array with $count elements from $array
      */
-    public static function randomElements($array = array('a', 'b', 'c'), $count = 1, $allowDuplicates = false)
+    public static function randomElements(iterable $array = ['a', 'b', 'c'], int $count = 1, bool $allowDuplicates = false): array
     {
-        $traversables = array();
+        $traversables = [];
 
         if ($array instanceof \Traversable) {
             foreach ($array as $element) {
@@ -200,7 +200,7 @@ class Base
         }
 
         $highKey = $numKeys - 1;
-        $keys = $elements = array();
+        $keys = $elements = [];
         $numElements = 0;
 
         while ($numElements < $count) {
@@ -226,9 +226,9 @@ class Base
      * @param  array $array
      * @return mixed
      */
-    public static function randomElement($array = array('a', 'b', 'c'))
+    public static function randomElement(iterable $array = ['a', 'b', 'c'])
     {
-        if (!$array || ($array instanceof \Traversable && !count($array))) {
+        if (!$array || !count($array)) {
             return null;
         }
         $elements = static::randomElements($array, 1);
@@ -242,7 +242,7 @@ class Base
      * @param  array $array
      * @return int|string|null
      */
-    public static function randomKey($array = array())
+    public static function randomKey($array = [])
     {
         if (!$array) {
             return null;
@@ -293,12 +293,12 @@ class Base
      * @param array $array The set to shuffle
      * @return array The shuffled set
      */
-    public static function shuffleArray($array = array())
+    public static function shuffleArray(array $array = [])
     {
-        $shuffledArray = array();
+        $shuffledArray = [];
         $i = 0;
         reset($array);
-        foreach ($array as $key => $value) {
+        foreach ($array as $value) {
             if ($i == 0) {
                 $j = 0;
             } else {
@@ -332,14 +332,14 @@ class Base
      * @param string $encoding The string encoding (defaults to UTF-8)
      * @return string The shuffled set
      */
-    public static function shuffleString($string = '', $encoding = 'UTF-8')
+    public static function shuffleString(string $string = '', string  $encoding = 'UTF-8')
     {
         if (function_exists('mb_strlen')) {
             // UTF8-safe str_split()
-            $array = array();
+            $array = [];
             $strlen = mb_strlen($string, $encoding);
             for ($i = 0; $i < $strlen; $i++) {
-                $array []= mb_substr($string, $i, 1, $encoding);
+                $array[] = mb_substr($string, $i, 1, $encoding);
             }
         } else {
             $array = str_split($string, 1);
@@ -367,11 +367,11 @@ class Base
      * @param  string $string String that needs to bet parsed
      * @return string
      */
-    public static function numerify($string = '###')
+    public static function numerify(string $string = '###'): string
     {
         // instead of using randomDigit() several times, which is slow,
         // count the number of hashes and generate once a large number
-        $toReplace = array();
+        $toReplace = [];
         if (($pos = strpos($string, '#')) !== false) {
             for ($i = $pos, $last = strrpos($string, '#', $pos) + 1; $i < $last; $i++) {
                 if ($string[$i] === '#') {

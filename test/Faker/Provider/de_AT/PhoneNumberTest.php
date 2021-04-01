@@ -5,7 +5,11 @@ namespace Cheremhovo1990\Faker\Test\Provider\de_AT;
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\de_AT\PhoneNumber;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class PhoneNumberTest extends TestCase
 {
 
@@ -14,7 +18,7 @@ final class PhoneNumberTest extends TestCase
      */
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new PhoneNumber($faker));
@@ -24,6 +28,11 @@ final class PhoneNumberTest extends TestCase
     public function testPhoneNumberFormat()
     {
         $number = $this->faker->phoneNumber;
-        $this->assertRegExp('/^06\d{2} \d{7}|\+43 \d{4} \d{4}(-\d{2})?$/', $number);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp('/^06\d{2} \d{7}|\+43 \d{4} \d{4}(-\d{2})?$/', $number);
+        } else {
+            $this->assertMatchesRegularExpression('/^06\d{2} \d{7}|\+43 \d{4} \d{4}(-\d{2})?$/', $number);
+        }
+
     }
 }
