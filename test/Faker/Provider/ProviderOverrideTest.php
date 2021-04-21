@@ -2,11 +2,15 @@
 
 namespace Cheremhovo1990\Faker\Test\Provider;
 
+use Cheremhovo1990\Faker\Factory;
 use Faker;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
 /**
  * Class ProviderOverrideTest
+ *
+ * @method assertMatchesRegularExpression($pattern, $string)
  *
  * @package Cheremhovo1990\Faker\Test\Provider
  *
@@ -35,12 +39,32 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testAddress($locale = null)
     {
-        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
+        $faker = Factory::create($locale);
 
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->city);
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->postcode);
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->address);
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->country);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->city);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->city);
+        }
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->postcode);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->postcode);
+        }
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->address);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->address);
+        }
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->country);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->country);
+        }
+
     }
 
 
@@ -50,9 +74,13 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testCompany($locale = null)
     {
-        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
+        $faker = Factory::create($locale);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->company);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->company);
+        }
 
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->company);
     }
 
 
@@ -62,10 +90,19 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testDateTime($locale = null)
     {
-        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
+        $faker = Factory::create($locale);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->century);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->century);
+        }
 
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->century);
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->timezone);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->timezone);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->timezone);
+        }
+
     }
 
 
@@ -79,14 +116,39 @@ final class ProviderOverrideTest extends TestCase
             $this->markTestSkipped('Transliterator class not available (intl extension)');
         }
 
-        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
+        $faker = Factory::create($locale);
 
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->userName);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->userName);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->userName);
+        }
 
-        $this->assertRegExp(static::TEST_EMAIL_REGEX, $faker->email);
-        $this->assertRegExp(static::TEST_EMAIL_REGEX, $faker->safeEmail);
-        $this->assertRegExp(static::TEST_EMAIL_REGEX, $faker->freeEmail);
-        $this->assertRegExp(static::TEST_EMAIL_REGEX, $faker->companyEmail);
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_EMAIL_REGEX, $faker->email);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_EMAIL_REGEX, $faker->email);
+        }
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_EMAIL_REGEX, $faker->safeEmail);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_EMAIL_REGEX, $faker->safeEmail);
+        }
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_EMAIL_REGEX, $faker->freeEmail);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_EMAIL_REGEX, $faker->freeEmail);
+        }
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_EMAIL_REGEX, $faker->companyEmail);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_EMAIL_REGEX, $faker->companyEmail);
+        }
+
     }
 
 
@@ -96,12 +158,32 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testPerson($locale = null)
     {
-        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
+        $faker = Factory::create($locale);
 
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->name);
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->title);
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->firstName);
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->lastName);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->name);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->name);
+        }
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->title);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->title);
+        }
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->firstName);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->firstName);
+        }
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->lastName);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->lastName);
+        }
+
     }
 
 
@@ -111,9 +193,14 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testPhoneNumber($locale = null)
     {
-        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
+        $faker = Factory::create($locale);
 
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->phoneNumber);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->phoneNumber);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->phoneNumber);
+        }
+
     }
 
 
@@ -123,9 +210,14 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testUserAgent($locale = null)
     {
-        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
+        $faker = Factory::create($locale);
 
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->userAgent);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->userAgent);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->userAgent);
+        }
+
     }
 
 
@@ -137,9 +229,14 @@ final class ProviderOverrideTest extends TestCase
      */
     public function testUuid($locale = null)
     {
-        $faker = \Cheremhovo1990\Faker\Factory::create($locale);
+        $faker = Factory::create($locale);
 
-        $this->assertRegExp(static::TEST_STRING_REGEX, $faker->uuid);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp(static::TEST_STRING_REGEX, $faker->uuid);
+        } else {
+            $this->assertMatchesRegularExpression(static::TEST_STRING_REGEX, $faker->uuid);
+        }
+
     }
 
 

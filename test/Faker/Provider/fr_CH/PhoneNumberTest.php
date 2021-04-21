@@ -5,7 +5,11 @@ namespace Cheremhovo1990\Faker\Test\Provider\fr_CH;
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\fr_CH\PhoneNumber;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class PhoneNumberTest extends TestCase
 {
 
@@ -14,7 +18,7 @@ final class PhoneNumberTest extends TestCase
      */
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new PhoneNumber($faker));
@@ -23,11 +27,21 @@ final class PhoneNumberTest extends TestCase
 
     public function testPhoneNumber()
     {
-        $this->assertRegExp('/^0\d{2} ?\d{3} ?\d{2} ?\d{2}|\+41 ?(\(0\))?\d{2} ?\d{3} ?\d{2} ?\d{2}$/', $this->faker->phoneNumber());
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp('/^0\d{2} ?\d{3} ?\d{2} ?\d{2}|\+41 ?(\(0\))?\d{2} ?\d{3} ?\d{2} ?\d{2}$/', $this->faker->phoneNumber());
+        } else {
+            $this->assertMatchesRegularExpression('/^0\d{2} ?\d{3} ?\d{2} ?\d{2}|\+41 ?(\(0\))?\d{2} ?\d{3} ?\d{2} ?\d{2}$/', $this->faker->phoneNumber());
+        }
+
     }
 
     public function testMobileNumber()
     {
-        $this->assertRegExp('/^07[56789] ?\d{3} ?\d{2} ?\d{2}$/', $this->faker->mobileNumber());
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp('/^07[56789] ?\d{3} ?\d{2} ?\d{2}$/', $this->faker->mobileNumber());
+        } else {
+            $this->assertMatchesRegularExpression('/^07[56789] ?\d{3} ?\d{2} ?\d{2}$/', $this->faker->mobileNumber());
+        }
+
     }
 }

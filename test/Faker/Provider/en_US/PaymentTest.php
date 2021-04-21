@@ -6,7 +6,11 @@ namespace Cheremhovo1990\Faker\Test\Provider\en_US;
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\en_US\Payment;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class PaymentTest extends TestCase
 {
     /**
@@ -14,7 +18,7 @@ final class PaymentTest extends TestCase
      */
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new Payment($faker));
@@ -31,7 +35,12 @@ final class PaymentTest extends TestCase
     public function testBankRoutingNumber()
     {
         $routingNo = $this->faker->bankRoutingNumber;
-        $this->assertRegExp('/^\d{9}$/', $routingNo);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp('/^\d{9}$/', $routingNo);
+        } else {
+            $this->assertMatchesRegularExpression('/^\d{9}$/', $routingNo);
+        }
+
         $this->assertEquals(Payment::calculateRoutingNumberChecksum($routingNo), $routingNo[8]);
     }
 

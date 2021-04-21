@@ -5,7 +5,11 @@ namespace Cheremhovo1990\Faker\Test\Provider\en_GB;
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\en_GB\Address;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class AddressTest extends TestCase
 {
 
@@ -14,7 +18,7 @@ final class AddressTest extends TestCase
      */
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new Address($faker));
@@ -29,9 +33,12 @@ final class AddressTest extends TestCase
 
         $postcode = $this->faker->postcode();
         $this->assertNotEmpty($postcode);
-        $this->assertInternalType('string', $postcode);
-        $this->assertRegExp('@^(GIR ?0AA|[A-PR-UWYZ]([0-9]{1,2}|([A-HK-Y][0-9]([0-9ABEHMNPRV-Y])?)|[0-9][A-HJKPS-UW]) ?[0-9][ABD-HJLNP-UW-Z]{2})$@i', $postcode);
-
+        $this->assertIsString($postcode);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp('@^(GIR ?0AA|[A-PR-UWYZ]([0-9]{1,2}|([A-HK-Y][0-9]([0-9ABEHMNPRV-Y])?)|[0-9][A-HJKPS-UW]) ?[0-9][ABD-HJLNP-UW-Z]{2})$@i', $postcode);
+        } else {
+            $this->assertMatchesRegularExpression('@^(GIR ?0AA|[A-PR-UWYZ]([0-9]{1,2}|([A-HK-Y][0-9]([0-9ABEHMNPRV-Y])?)|[0-9][A-HJKPS-UW]) ?[0-9][ABD-HJLNP-UW-Z]{2})$@i', $postcode);
+        }
     }
 
 }

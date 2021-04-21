@@ -5,12 +5,16 @@ namespace Cheremhovo1990\Faker\Test\Provider\en_ZA;
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\en_ZA\PhoneNumber;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class PhoneNumberTest extends TestCase
 {
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new PhoneNumber($faker));
@@ -60,7 +64,12 @@ final class PhoneNumberTest extends TestCase
                 $this->assertGreaterThanOrEqual(10, count($digits));
             }
 
-            $this->assertRegExp('/^(\+27|27)?(\()?0?([6][0-4]|[7][1-9]|[8][1-9])(\))?( |-|\.|_)?(\d{3})( |-|\.|_)?(\d{4})/', $number);
+            if (version_compare(Version::id(), '8.0', '<=')) {
+                $this->assertRegExp('/^(\+27|27)?(\()?0?([6][0-4]|[7][1-9]|[8][1-9])(\))?( |-|\.|_)?(\d{3})( |-|\.|_)?(\d{4})/', $number);
+            } else {
+                $this->assertMatchesRegularExpression('/^(\+27|27)?(\()?0?([6][0-4]|[7][1-9]|[8][1-9])(\))?( |-|\.|_)?(\d{3})( |-|\.|_)?(\d{4})/', $number);
+            }
+
         }
     }
 }

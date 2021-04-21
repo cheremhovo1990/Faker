@@ -5,7 +5,11 @@ namespace Cheremhovo1990\Faker\Test\Provider\fa_IR;
 use Cheremhovo1990\Faker\Provider\fa_IR\Person;
 use Cheremhovo1990\Faker\Generator;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class PersonTest extends TestCase
 {
 
@@ -14,7 +18,7 @@ final class PersonTest extends TestCase
      */
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new Person($faker));
@@ -27,7 +31,11 @@ final class PersonTest extends TestCase
             $nationalCode = $this->faker->nationalCode;
 
             // nationalCode should be in the format ##########
-            $this->assertRegExp('/^[0-9]{10}$/', $nationalCode);
+            if (version_compare(Version::id(), '8.0', '<=')) {
+                $this->assertRegExp('/^[0-9]{10}$/', $nationalCode);
+            } else {
+                $this->assertMatchesRegularExpression('/^[0-9]{10}$/', $nationalCode);
+            }
 
             $areaCode = substr($nationalCode, 0, 3);
             $controlCode = substr($nationalCode, 9, 1);

@@ -5,6 +5,7 @@ namespace Cheremhovo1990\Faker\Test\Provider\zh_TW;
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\zh_TW\Person;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
 final class PersonTest extends TestCase
 {
@@ -13,7 +14,7 @@ final class PersonTest extends TestCase
      */
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new Person($faker));
@@ -31,7 +32,12 @@ final class PersonTest extends TestCase
         $codesString = Person::$idBirthplaceCode[$firstChar] . substr($id, 1);
 
         // After transfer the first alphabet word into 2 digit number, there should be totally 11 numbers
-        $this->assertRegExp("/^[0-9]{11}$/", $codesString);
+
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp("/^[0-9]{11}$/", $codesString);
+        } else {
+            $this->assertMatchesRegularExpression("/^[0-9]{11}$/", $codesString);
+        }
 
         $total = 0;
         $codesArray = str_split($codesString);

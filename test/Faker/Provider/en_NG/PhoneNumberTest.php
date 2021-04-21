@@ -1,11 +1,15 @@
 <?php
 
-namespace Cheremhovo1990\Faker\Test\Provider\ng_NG;
+namespace Cheremhovo1990\Faker\Test\Provider\en_NG;
 
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\en_NG\PhoneNumber;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class PhoneNumberTest extends TestCase
 {
 
@@ -14,7 +18,7 @@ final class PhoneNumberTest extends TestCase
      */
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new PhoneNumber($faker));
@@ -26,7 +30,11 @@ final class PhoneNumberTest extends TestCase
         $phoneNumber = $this->faker->phoneNumber();
 
         $this->assertNotEmpty($phoneNumber);
-        $this->assertInternalType('string', $phoneNumber);
-        $this->assertRegExp('/^(0|(\+234))\s?[789][01]\d\s?(\d{3}\s?\d{4})/', $phoneNumber);
+        $this->assertIsString($phoneNumber);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp('/^(0|(\+234))\s?[789][01]\d\s?(\d{3}\s?\d{4})/', $phoneNumber);
+        } else {
+            $this->assertMatchesRegularExpression('/^(0|(\+234))\s?[789][01]\d\s?(\d{3}\s?\d{4})/', $phoneNumber);
+        }
     }
 }

@@ -5,12 +5,16 @@ namespace Cheremhovo1990\Faker\Test\Provider\fr_FR;
 use Cheremhovo1990\Faker\Generator;
 use Cheremhovo1990\Faker\Provider\fr_FR\Person;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Runner\Version;
 
+/**
+ * @method assertMatchesRegularExpression($pattern, $string)
+ */
 final class PersonTest extends TestCase
 {
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->addProvider(new Person($faker));
@@ -26,12 +30,22 @@ final class PersonTest extends TestCase
 	public function testNIRReturnsTheRightPattern()
     {
 		$nir = $this->faker->nir;
-		$this->assertRegExp("/^[12]\d{5}[0-9A-B]\d{8}$/", $nir);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp("/^[12]\d{5}[0-9A-B]\d{8}$/", $nir);
+        } else {
+            $this->assertMatchesRegularExpression("/^[12]\d{5}[0-9A-B]\d{8}$/", $nir);
+        }
+
 	}
 
 	public function testNIRFormattedReturnsTheRightPattern()
     {
 		$nir = $this->faker->nir(null, true);
-		$this->assertRegExp("/^[12]\s\d{2}\s\d{2}\s\d{1}[0-9A-B]\s\d{3}\s\d{3}\s\d{2}$/", $nir);
+        if (version_compare(Version::id(), '8.0', '<=')) {
+            $this->assertRegExp("/^[12]\s\d{2}\s\d{2}\s\d{1}[0-9A-B]\s\d{3}\s\d{3}\s\d{2}$/", $nir);
+        } else {
+            $this->assertMatchesRegularExpression("/^[12]\s\d{2}\s\d{2}\s\d{1}[0-9A-B]\s\d{3}\s\d{3}\s\d{2}$/", $nir);
+        }
+
 	}
 }
